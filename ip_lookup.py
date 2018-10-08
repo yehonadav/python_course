@@ -1,13 +1,13 @@
-def check_ip_byte(dl,i,chars_left,ip, dot='exist'):
+def check_ip_byte(string, i, chars_left, ip, dot='exist'):
     index, result = i + 1, 'fail'
-    if len(dl) - (i) >= chars_left:
-        n = dl[i]
+    if len(string) - i >= chars_left:
+        n = string[i]
         if n.isdigit():
             i += 1
             while n.isdigit():
-                if i < len(dl):
-                    if dl[i].isdigit():
-                        n += dl[i]
+                if i < len(string):
+                    if string[i].isdigit():
+                        n += string[i]
                         i += 1
                     else:
                         i -= 1
@@ -23,25 +23,25 @@ def check_ip_byte(dl,i,chars_left,ip, dot='exist'):
             elif dot == 'skip':
                 ip += n
                 return 'ok', index, ip
-            elif index < len(dl):
-                if dl[index] == '.':
+            elif index < len(string):
+                if string[index] == '.':
                     ip += n + '.'
                     index += 1
                     return 'ok', index, ip
     return result, index, ip
 
 
-def ip_lookup(data_line):
-    if len(data_line) > 6:
+def ip_lookup(string):
+    if len(string) > 6:
         i = 0
-        while i < len(data_line):
+        while i < len(string):
             ip = ''
-            for c in [7,5,3]:
-                result, i, ip = check_ip_byte(data_line, i, c, ip)
+            for c in [7, 5, 3]:
+                result, i, ip = check_ip_byte(string, i, c, ip)
                 if result != 'ok':
                     break
             if result == 'ok':
-                result, i, ip = check_ip_byte(data_line, i, 1, ip, dot='skip')
+                result, i, ip = check_ip_byte(string, i, 1, ip, dot='skip')
                 if result == 'ok':
                     ip = ip.split('.')
                     for i in range(len(ip)):

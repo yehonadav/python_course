@@ -7,12 +7,12 @@ def compute(*numbers):
     for i in str(sum1).split():
         sum2 *= float(i)
 
-    sum = (sum2**numbers[0]) * (2 + sum1 + 1/sum2)
-    return sum
+    super_sum = (sum2**numbers[0]) * (2 + sum1 + 1/sum2)
+    return super_sum
 
 
 def enlarge_sequence(sequence, size=100):
-    for i in sequence:
+    for _ in sequence:
         sequence.append(compute(*sequence))
         if len(sequence) > size:
             break
