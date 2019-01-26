@@ -22,5 +22,12 @@ solutions:
     birth = datetime.datetime.utcnow().year - age 
     print("{}; you were born in {}".format(name, birth))
  
- 
+make sure you have python 3.7+ installed.
+
+we recommend using venv:
+
+.. code-block:: text
+
+    python -m venv venv
+    source venv/bin/activate || venv\\Scripts\\activate
  
