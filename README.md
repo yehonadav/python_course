@@ -13,7 +13,7 @@ Print out a message addressed to them that tells them the year they were born in
 solutions: 
 ---------
 
-1:
+1: 
 .. code-block:: text
 
     import datetime 
