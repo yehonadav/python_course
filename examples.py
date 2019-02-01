@@ -26,23 +26,61 @@
 # print(sum(get_fib_sum(21)))
 
 
-def get_arg(name, age: int, hobby, *optional_hobbies, **other):
-    # enforce type
-    if not isinstance(age, int):
-        raise TypeError
+# def get_arg(name, age: int, hobby, *optional_hobbies, **other):
+#     # enforce type
+#     if not isinstance(age, int):
+#         raise TypeError
+#
+#     # handle optional hobbies
+#     oh = ''
+#     for i in optional_hobbies:
+#         oh += ' & ' + i
+#
+#     # handle other content
+#     oth = ''
+#     for i in other:
+#         oth += ' {} {}'.format(i, other[i])
+#
+#     sentance = "my name is {}, {}.\nI like to {}{}.{}".format(name, age, hobby, oh, oth)
+#     return sentance
+#
+#
+# print(get_arg('gob', 30, 'fly', 'snow board', 'porn', wood='i like to chop'))
 
-    # handle optional hobbies
-    oh = ''
-    for i in optional_hobbies:
-        oh += ' & ' + i
-
-    # handle other content
-    oth = ''
-    for i in other:
-        oth += ' {} {}'.format(i, other[i])
-
-    sentance = "my name is {}, {}.\nI like to {}{}.{}".format(name, age, hobby, oh, oth)
-    return sentance
+# תכתוב תוכנית אשר מקבלת מידע מתוך exercises.data get_data
+# וממיינת את השמות לרשימה בסדר לפי הabc
+# יש להוסיף לרשימה את כתובת המגורים של האנשים
 
 
-print(get_arg('gob', 30, 'fly', 'snow board', 'porn', wood='i like to chop'))
+def sort_names_with_addresses(data):
+    names = []
+    names_and_addresses = {}
+    for person in data:
+        if person['name'] in names:
+            names_and_addresses[person['name']].append(person['address'])
+        else:
+            names.append(person['name'])
+            names_and_addresses[person['name']] = [person['address']]
+
+    names.sort()
+    sorted_names_with_addresses = []
+    for name in names:
+        sorted_names_with_addresses.append((name, names_and_addresses[name]))
+    return sorted_names_with_addresses
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
