@@ -98,6 +98,27 @@ output example:
 * use sum_postal_codes  
 * print the results  
   
+(14)  Create a file ```number_generator.py```  
+* import the random module  
+* create a numbers function with a range argument  
+* add a while range > 0 loop to the function.  
+* yeild a random number(0-10,000) in the loop  
+* subtract 1 from range in the loop  
+* finish the loop and write a return to break the function  
+* congrats! you created a generator. test it with  
+```for n in numbers(200): print(n)```  
+  
+(15)  Create a file ```even_numbers.py```  
+use the number generator from previous exercise(range=40)  
+create a list that has only even numbers in it.  
+* if list length > 10 raise an exeption stating that the list has exceeded its limit.  
+* create a special MaxLengthException for the exercise.  
+  
+(16)  Create a file ```rock_paper_scissors.py```  
+create a rock paper scissors game.
+* use the getpass module(doesn't run well with pycharm)  
+https://stackoverflow.com/questions/40007802/getpass-getpass-function-in-python-not-working
+  
   
 level 2:  
 ---------
