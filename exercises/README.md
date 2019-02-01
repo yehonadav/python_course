@@ -5,15 +5,17 @@ level 1:
 
 (1)  Create a program ```name_info.py``` that asks the user to enter their name and their age. 
 Print out a message addressed to them that tells them the year they were born in. 
- 
+  
 (2)  Create a program ```odd_or_even_numbers.py``` that asks the user for a number. 
 Depending on whether the number is even or odd, print out an appropriate message. 
- 
+  
+  
 (3)  Create a program ```list_less_than_5.py```  
 use this list:  
 ```ages = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]```  
 Write a program that creates a new list that has all the elements  
 less than 5 from ```ages``` list and print out all the elements of the new list.  
+  
   
 (4)  Create a program ```divider.py```  
 that asks the user for a number and then prints out  
@@ -21,6 +23,7 @@ a list of all the divisors of that number.
 (If you don’t know what a divisor is,  
 it is a number that divides evenly into another number.  
 For example, 13 is a divisor of 26 because 26 / 13 has no remainder.)  
+   
    
 (5)  Create a program ```common_list.py```  
 that takes two lists:  
@@ -30,10 +33,12 @@ and returns a list that contains only the elements that
 are common between the lists (without duplicates).  
 Make sure your program works on two lists of different sizes.  
   
+  
 (6)  Create a program ```palindrome.py```  
 that asks the user for a string and print out  
 whether this string is a palindrome or not.  
 (A palindrome is a string that reads the same forwards and backwards.)  
+  
   
 (7)  Create a program ```bar_mitzva.py```  
 use the exercises data:  
@@ -45,8 +50,10 @@ who's age is under 13 and print the item keys
 less than 13 print a message saying all the  
 people are old.  
   
+  
 (8)  Create a program ```fibonacci_sum.py```  
 create a program to summarize the fibonacci sequence.   
+  
   
 (9)  Create a program ```hobbies_handler.py```  
 create a hobbies function with name, age, hobby, *optional_hobbies & **other  
@@ -58,6 +65,7 @@ that returns a sentence:
   ```if __name__ == "__main__":```  
   and print the result in the main program.  
   
+  
 (10)  Create a program ```sort_data.py```  
 * create a function sort_names_with_addresses that gets a data argument(exercise data)  
 * the function creates a list of sorted names.  
@@ -68,8 +76,9 @@ output example:
 ```[```  
 ```('Ana Romero', ['8973 Cline Mall\nWest Williamhaven, LA 13926']),```  
 ```('Anthony Poole', ['3412 Costa Fall Apt. 204\nEast Gerald, VT 13412'])```  
-```]```
-
+```]```  
+  
+  
 (11)  open ```sort_data.py```  
 * create another function called add_random_postal  
   that gets a names_with_addresses argument(the sorted output of previous function)  
@@ -78,13 +87,15 @@ output example:
   of every item: a string of 5 random digits.  
 * the function return the result.  
   
+  
 (12)  open ```sort_data.py```  
 * create another function called sum_postal_codes  
   that gets a data argument(the output of previous function)  
 * the function iterates over the data  
-  and sums up the random postal code of each item.
-* the function return the result.
-
+  and sums up the random postal code of each item.  
+* the function return the result.  
+  
+  
 (13)  Create a program ```main_sort.py```  
 * import ```from exercises.data import get_data```  
 * import ```sort_names_with_addresses``` from ```exercises.level_1.sort_data```  
@@ -98,6 +109,7 @@ output example:
 * use sum_postal_codes  
 * print the results  
   
+  
 (14)  Create a file ```number_generator.py```  
 * import the random module  
 * create a numbers function with a range argument  
@@ -108,18 +120,32 @@ output example:
 * congrats! you created a generator. test it with  
 ```for n in numbers(200): print(n)```  
   
+  
 (15)  Create a file ```even_numbers.py```  
 use the number generator from previous exercise(range=40)  
 create a list that has only even numbers in it.  
 * if list length > 10 raise an exeption stating that the list has exceeded its limit.  
 * create a special MaxLengthException for the exercise.  
   
+  
 (16)  Create a file ```rock_paper_scissors.py```  
-create a rock paper scissors game.
+create a rock paper scissors game.  
 * use the getpass module(doesn't run well with pycharm)  
 https://stackoverflow.com/questions/40007802/getpass-getpass-function-in-python-not-working
   
   
+(17)  Create a file ```guess_game.py```  
+* Generate a random number between 0 and 10  
+* Ask the user to guess the number,  
+* then tell them whether they guessed too low,  
+  too high, or exactly right.   
+* Keep the game going until the user types “exit”
+* Keep track of  answer + low/high/exact guesses  
+  the user has taken in each round,  
+  and when the game ends, print this out.  
+* use functions & run the game from the main condition.  
+
+
 level 2:  
 ---------
   
