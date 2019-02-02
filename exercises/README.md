@@ -183,7 +183,7 @@ level 3:
   for calling sys.exit() or proceeding to choose a game size.
 ![menu](https://github.com/yehonadav/python_course/blob/master/exercises/level_3/snake/images/menu.JPG?raw=true)  
 * have a choose_size method with ```Small Normal Big``` buttons  
-  to set the snake & apples sizes and proceeding to choose a difficulty level.
+  to set the snake & apple sizes and proceeding to choose a difficulty level.
 ![choose size](https://github.com/yehonadav/python_course/blob/master/exercises/level_3/snake/images/choose_size.JPG?raw=true)  
 * have a choose_difficulty method with ```Easy Normal Hard Expert``` buttons  
   to set the snake moving speed and proceeding to run the game.  
