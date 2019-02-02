@@ -164,7 +164,7 @@ level 3:
 ---------
   
 (1)  Create a snake game using the pygame module  
-![Course logo](https://github.com/yehonadav/python_course/tree/master/exercises/level_3/snake/images/snake.JPG)
+![Snake](https://github.com/yehonadav/python_course/blob/master/exercises/level_3/snake/images/sanke.JPG)
 * Create a python package ```snake```  
 * create a __main__.py file for the package  
   and import a Play class to run the game.  
