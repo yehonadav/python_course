@@ -144,8 +144,25 @@ https://stackoverflow.com/questions/40007802/getpass-getpass-function-in-python-
   the user has taken in each round,  
   and when the game ends, print this out.  
 * use functions & run the game from the main condition.  
-
-
+  
+(18)  Create a file ```zero_division.py```
+* create a function ```create_numbers``` that returns a list of  
+  random numbers with a random length between 0-9  
+* create a function ```avg``` that takes the list of ```create_numbers``` and returns an average number  
+* create a function ```print_average``` that takes the list of ```create_numbers``` and try to print the average  
+* if ```print_average``` fail with ```ZeroDivisionError``` or ```TypeError``` it will print  
+  the error and return it.  
+* make a main program to call ```print_average``` until failure.  
+  
+(19)  Create a file ```type_error.py```
+* use and import functions from ```zero_division.py```  
+* create a function ```randomly_stringify_list_items```
+* make a main program to:  
+  create random list of numbers  
+  randomly stringify some numbers  
+  ```print_average``` until failure.  
+  
+     
 level 2:  
 ---------
   
