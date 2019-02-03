@@ -210,7 +210,11 @@ level 2:
   is 'N' print ```'better luck next time'```  
   finally print ```'assertion is done'```  
 * call ```assert_program_is_done```  
-
+  
+(3)  Create a file ```first_recurring_char.py```    
+* create a function to find first recurring char in a string.  
+* make it performance worthy!  
+  
   
 level 3:  
 ---------
