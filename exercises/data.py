@@ -12,7 +12,7 @@ def get_data(size=10):
             'age': random.randint(0, 121),
             'birth': random.randint(1900, 2019),
             'automotive_number': fake.license_plate(),
-            'bank_acount': fake.iban(),
+            'bank_account': fake.iban(),
             'favorite_color': fake.safe_color_name(),
             'company': fake.company(),
             'catch_phrase': fake.catch_phrase(),
