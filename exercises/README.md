@@ -212,7 +212,7 @@ level 2:
 * call ```assert_program_is_done```  
   
 (3)  Create a file ```first_recurring_char.py```    
-* create a function to find first recurring char in a string.  
+* create a function to find the first recurring char in a string.  
 * make it performance worthy!  
   
   
