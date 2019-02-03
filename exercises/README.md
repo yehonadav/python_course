@@ -191,6 +191,26 @@ level 2:
 * iterate over fibonacci_iterator and print  
   the result from 5  to 89.  
   
+(2)  Create a file ```assert_program_is_done.py```  
+* create a ```UserQuit``` exception  
+* create a ```ask_user``` function with a question  
+  argument. try to ask the question using ```input```  
+  and expect an ```y,n,q```  answer.  
+  raise a UserQuit exception if an ```EOFError```  
+  is encountered or if the user pressed "Q/q/quit/QUIT"  
+  if the user pressed "Y/YES/N/NO/y/yes/n/no"  
+  return the uppercased first character the user pressed.  
+  for anything else recurse the ```ask_user``` function  
+* create a ```assert_program_is_done``` function  
+  use the ```time``` module to measure how long it  
+  took the user to answer. if a UserQuit error rises  
+  print a message stating that the user quit before  
+  assertion was completed, else: check if the answer is 'Y'  
+  print the time it took the user to answer, if the answer  
+  is 'N' print ```'better luck next time'```  
+  finally print ```'assertion is done'```  
+* call ```assert_program_is_done```  
+
   
 level 3:  
 ---------
