@@ -45,8 +45,8 @@ use the exercises data:
 ```from exercises.data import get_data```  
 ```data = get_data(10)```  
 loop over 10 items and get the first item  
-who's age is under 13 and print the item keys  
-& values. if none of the items has and age  
+who's age is under 13 & print the item keys  
+& values. if none of the items has an age  
 less than 13 print a message saying all the  
 people are old.  
   
@@ -56,7 +56,7 @@ create a program to summarize the fibonacci sequence.
   
   
 (9)  Create a program ```hobbies_handler.py```  
-create a hobbies function with name, age, hobby, *optional_hobbies & **other  
+create a hobbies function with ```name, age, hobby, *optional_hobbies & **other```  
 that returns a sentence:
 ```my name is {name}, my age is {age}.\nI like to {hobby}{optional_hobbies}.{optional_keyword_hobbies}```   
 * add ```int``` hint to age argument.  
@@ -67,7 +67,7 @@ that returns a sentence:
   
   
 (10)  Create a program ```sort_data.py```  
-* create a function sort_names_with_addresses that gets a data argument(exercise data)  
+* create a function ```sort_names_with_addresses``` that gets a data argument(exercise data)  
 * the function creates a list of sorted names.  
 * the function adds addresses to the name list,  
 * the function finally returns a sorted list (by name) of tuples  
@@ -81,7 +81,7 @@ output example:
   
 (11)  open ```sort_data.py```  
 * create another function called add_random_postal  
-  that gets a names_with_addresses argument(the sorted output of previous function)  
+  that gets a ```names_with_addresses``` argument(the sorted output of previous function)  
 * the function iterates over the list  
   and creates a new list with a third value  
   of every item: a string of 5 random digits.  
@@ -214,6 +214,13 @@ level 2:
 (3)  Create a file ```first_recurring_char.py```    
 * create a function to find the first recurring char in a string.  
 * make it performance worthy!  
+  
+(4)  Create a file ```required_keyword_positionals.py```    
+* create a function that accepts only keyword arguments  
+* you can't use ```**kwargs``` or its variants  
+* arguments can't have default values  
+* the function must print all local variables
+* make it in 1 line of code. - what's cool about this function?
   
   
 level 3:  
