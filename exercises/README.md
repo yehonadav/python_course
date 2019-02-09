@@ -1,5 +1,10 @@
 # Exercises
-
+  
+level 0: 
+---------
+  
+just go through them    
+  
 level 1: 
 ---------
 
@@ -177,7 +182,80 @@ https://stackoverflow.com/questions/40007802/getpass-getpass-function-in-python-
   try to solve -> 6x² + 11x - 35 = 0
   in case of ```QuadError``` solve -> 11x + 50 = 0
   
-       
+(21)  Create a file ```calculator.py```  
+* create a ```Calculator```  class  with ```a, b``` arguments  
+* create ```display``` method to print the numbers and the last result  
+* create ```add``` method to calculate ```a+b```  
+* create ```sub``` method to calculate ```a-b```  
+* make sure the result is shared between all calculators  
+* test the calculators(level 2)  
+  
+(22)  Create a file ```inherit.py```  
+* use ```time``` & ```datetime``` modules  
+* create ```Time``` class with ```get_time``` to get a time signature  
+* create ```Date``` class with ```get_date``` to get a date signature  
+* inherit ```Time``` class from in ```Date``` class  
+* create a main program condition:  
+  ```if __name__ == "__main__":```  
+  use both classes and their available methods  
+  
+(23)  Create a file ```athlete.py```  
+* create ```Athlete``` class with ```name, power, speed, endurance, weight``` arguments  
+* create ```Sprinter``` and inherit ```Athlete```  
+  boots the ```Sprinter``` parameters as such:  
+```  
+power *= 2, speed += 1, endurance -= 3  
+if endurance < 1: endurance = 1
+```  
+* create a ```run``` method like so in ```Sprinter```:  
+```
+    def run(self, distance):
+        endurance = 1 + distance/self.endurance
+        sleep((self.weight*distance)/(self.power*(self.speed**2)+endurance))
+        return self.name
+```
+  
+(25)  Create a file ```timer.py```  
+* create ```Measurement``` class with ```date``` & ```run_time```  
+  
+(26)  in ```timer.py```  
+* import ```Date```  from exercise 22  
+* create ```Timer``` class & inherit ```Date```  
+* create ```__init__``` method with ```f, *args, **kwargs``` arguments  
+* save the arguments as such:
+```
+    self.operation = f
+    self.args = args
+    self.kwargs = kwargs
+    self.last_measurement = Measurement()
+```  
+* create a ```start``` method  
+  to measure time & date,  
+  run an operation with its arguments  
+  & return the operation result  
+  
+(27)  in ```timer.py```  
+* create a main program condition:  
+  ```if __name__ == "__main__":```  
+* use these imports: 
+```
+    from random import randint
+    from exercises.level_1.oop.athlete import Sprinter
+    from exercises.data import get_data
+
+```
+* create ```winner```, ```distance```, ```athletes``` variables  
+* loop over the athletes and create sprinters  
+* use Timer to measure each sprinter running ```distance```   
+* sort the winner  
+* print a message with:  
+  the date of the competition,  
+  winner name, the distance,  
+  the winner run time  
+
+  
+    
+  
 level 2:  
 ---------
   
@@ -221,6 +299,16 @@ level 2:
 * arguments can't have default values  
 * the function must print all local variables
 * make it in 1 line of code. - what's cool about this function?
+  
+(5)  Create a simple address book application,  
+to store, search, modify & delete records containing:  
+name, address, email & phone number (level 2+)  
+* you must use a class called ```AddressBook```  
+* use the pickle module as a database  
+  
+(6)  Create a progress bar using ```sys``` & ```time``` modules  
+![progressbar1](https://github.com/yehonadav/python_course/blob/master/exercises/images/progressbar1.JPG?raw=true)  
+![progressbar2](https://github.com/yehonadav/python_course/blob/master/exercises/images/progressbar1.JPG?raw=true)  
   
   
 level 3:  
