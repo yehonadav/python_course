@@ -2,5 +2,12 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/5-python-tkinter-games" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cosmic-space-game" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/exercises/level_2/pyxelgame" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/exercises/level_3/cosmic-space-game" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/exercises/level_3/space_game" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/python-projects" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spooky-ln" vcs="Git" />
   </component>
 </project>

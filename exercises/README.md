@@ -383,11 +383,25 @@ class User:
   
 (9)  Create a test for ```users.py```  
   
+(10)  Create a simple game using pyxel  
+  
+(11)  Build a fill-in-the-blanks quiz game.  
+Your quiz will prompt a user with a sentence  
+containing several blanks. The user should then be asked to fill in each blank appropriately to complete the sentence.  
+  
+(12)  create a tic tac toe game  
+  
   
 level 3:  
 ---------
   
-(1)  Create a snake game using the pygame module  
+(1)  create a black jack game  
+  
+(2)  Build a randomly generated Python space game.  
+With traveling, trading, mining, resource management, battles and storyline events  
+along with saving the users data to that of an output file.  
+  
+(3)  Create a snake game using the pygame module  
 ![Snake](https://github.com/yehonadav/python_course/blob/master/exercises/level_3/snake/images/sanke.JPG?raw=true)  
 * Create a python package ```snake```  
 ![Snake package](https://github.com/yehonadav/python_course/blob/master/exercises/level_3/snake/images/snake_package.JPG?raw=true)  
