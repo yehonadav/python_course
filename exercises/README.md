@@ -308,7 +308,7 @@ name, address, email & phone number (level 2+)
   
 (6)  Create a progress bar using ```sys``` & ```time``` modules  
 ![progressbar1](https://github.com/yehonadav/python_course/blob/master/exercises/images/progressbar1.JPG?raw=true)  
-![progressbar2](https://github.com/yehonadav/python_course/blob/master/exercises/images/progressbar1.JPG?raw=true)  
+![progressbar2](https://github.com/yehonadav/python_course/blob/master/exercises/images/progressbar2.JPG?raw=true)  
   
   
 level 3:  
