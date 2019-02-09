@@ -307,9 +307,56 @@ name, address, email & phone number (level 2+)
 * use the pickle module as a database  
   
 (6)  Create a progress bar using ```sys``` & ```time``` modules  
-![progressbar1](https://github.com/yehonadav/python_course/blob/master/exercises/images/progressbar1.JPG?raw=true)  
-![progressbar2](https://github.com/yehonadav/python_course/blob/master/exercises/images/progressbar2.JPG?raw=true)  
+![progressbar1](https://github.com/yehonadav/python_course/blob/master/exercises/images/progressbar.JPG?raw=true)  
   
+(7)  Create a file ```best_sum_and_ratio.py``` (level 2++)  
+* import: 
+```
+import random  
+from exercises.level_2.overloaded_function import expon, results
+```  
+* create & run a function to try and run expon with None  
+  and run it again with a str/int(randomly) with a random value: 0-4.  
+  in case of failure run expon with a list of 2 random values: 0-4, 2-3.  
+* create a ```create_results``` function  
+  it will run this loop:  
+```
+    while res_sum > stop:
+        print("sum {} > {}".format(res_sum, stop))
+        ...
+        # we can wrap this into a function
+        expon(random.randint(0, 1025))
+        expon(random.randint(0, 1025) * 0.001)
+        expon([random.randint(1, 101) * 68 / 47 * random.randint(1, 3) for _ in range(random.randint(0, 25))])
+
+        stop = len(results)
+        # we can wrap this into a function
+        if stop > ...:
+            before = start - n
+            if before < 1:
+                before = 1
+            for i in range(before, stop):
+                if results[i] > 1:
+                    results[i] = 1/results[i]
+                    
+        # should be able to reach +5000 results
+        n = int(str((n+1)*...*(n+1)).split('.')[0])+1
+        res_sum = sum(results)
+        ...
+    print("sum {} < {}\n\n\n".format(res_sum, stop))
+```  
+  res_sum: expon results summary  
+  stop: expon results length  
+  results: expon results  
+  n: a counter starting from 0  
+  start: expon results length  
+  ...: fill your own code    
+* create a ```find_best_sum_and_ratio``` function  
+  inside the function: create a SUM class with ```sum, len, ratio``` attributes  
+  find the point in time where the summary of the results was the highest  
+  find the point in time where the ratio summary:length of results was the highest  
+  print them.
+
   
 level 3:  
 ---------
