@@ -1,0 +1,16 @@
+	  _____                     _      
+	 /  __ \                   (_)    
+	 | /  \/ ___  ___ _ __ ___  _  ___                         
+	 | |    / _ \/ __| '_ ` _ \| |/ __|
+	 | \__/\ (_) \__ \ | | | | | | (__ 
+ 	  \____/\___/|___/_| |_| |_|_|\___|
+
+    	   'Great name 10/10' - everyone.
+
+          type 'start' to start a new game.
+            type 'end' to close the game
+	
+	   __
+	   \ \_____
+	###[==_____>  Made by James Williams
+	   /_/ 
