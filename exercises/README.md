@@ -310,7 +310,7 @@ name, address, email & phone number (level 2+)
 ![progressbar1](https://github.com/yehonadav/python_course/blob/master/exercises/images/progressbar.JPG?raw=true)  
   
 (7)  Create a file ```best_sum_and_ratio.py``` (level 2++)  
-* import: 
+* import:  
 ```
 import random  
 from exercises.level_2.overloaded_function import expon, results
@@ -357,6 +357,32 @@ from exercises.level_2.overloaded_function import expon, results
   find the point in time where the ratio summary:length of results was the highest  
   print them.
 
+(8)  Create a file ```users.py```  
+* create exceptions: ```LowCreditsError, LowStockError, MissingItemError```  
+* create ```User``` class:  
+```
+class User:
+    users = {}
+
+    def __init__(self, name, password, credit):
+        self.name = name
+        self.password = password
+        self.credit = credit
+        self.items = {}
+    
+    ...
+```
+* create ```login, logout, buy, sell, create``` methods:  
+login/logout need to compare passwords and return True/None
+buy/sell will add/subtract items and change user credit, use exceptions accordingly  
+create is a classmethod to create users and add them to the users by their names:
+```
+class User:
+    users = {} # right here
+```  
+  
+(9)  Create a test for ```users.py```  
+  
   
 level 3:  
 ---------
