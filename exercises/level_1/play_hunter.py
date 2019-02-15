@@ -93,7 +93,7 @@ class Play:
                 if character.is_dead:
                     dead += 1
             if len(self.Characters) == dead:
-                print(self.player + ' you win the game')
+                print(self.player.name + ' you win the game')
                 break
 
             print('\n\nthese Characters run wild:')
