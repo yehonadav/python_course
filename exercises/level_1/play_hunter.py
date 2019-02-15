@@ -78,7 +78,7 @@ class Play:
         self.Characters.append(Wolf('wolfi'))
         # Characters.append(Wolf('fang', 20))
         # Characters.append(Wolf('balrog', 15))
-        self.Characters.append(Wolf('tony'))
+        self.Characters.append(Tiger('tony'))
         self.Characters.append(Elephant('elf'))
         self.Characters.append(Rhino('rino'))
         self.main_loop()
