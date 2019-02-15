@@ -86,7 +86,7 @@ class Play:
     def main_loop(self):
         while True:
             if self.player.is_dead:
-                print(self.player + ' you lost the game')
+                print(self.player.name + ' you lost the game')
                 break
             dead = 0
             for character in self.Characters:
