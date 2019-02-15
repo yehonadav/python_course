@@ -1,5 +1,133 @@
-# python_course
+# Python Course [![Python Course](https://www.python.org/static/opengraph-icon-200x200.png)](https://www.python.org)  Nano Degree
 
-Net4U
-=====
- 
+
+```                         
+                                                   ,:
+                                                 ,' |
+                                                /   :
+                                             --'   /
+                                             \/ />/
+                                             / /_\
+                                          __/   /
+                                          )'-. /
+                                          ./  :\
+                                           /.' '
+                                         '/'
+                                         +
+                                        '
+                                      `.
+                                  .-"-
+                                 (    |
+                              . .-'  '.
+                             ( (.   )8:
+                         .'    / (_  )
+                          _. :(.   )8P  `     
+                       .  (  `-' (  `.   .
+                       .  :  (   .a8a)    _____.-..-.  
+                      /_`( "a `a. )"'  .-~@@/ / q  p \
+                  (  (/  .  ' )=='   .'@ _@/..\-.__.-/
+                 (   (    )  .8"   +/@.-~/|~~~`\|__|/
+                   (`'8a.( _(   (   |'--<||     '~~'
+                ..-. `8P    ) `  ) +|>--<\@\
+              -'   (      -ab:  )   \>---<\@`\.
+            '    _  `    (8P"Ya      `\>---<`\@`\.
+          _(    (    )b  -`.  ) +      `\>----<`\@`\.
+         ( 8)  ( _.aP" _a   \( \   *     `\>-----<`\@`\.
+       +  )/    (8P   (88    )  )  _       `\>-----<`\.@`\.
+          (a:f   "     `"       ` (_)        `\>------<`\.@`\.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~(__)~~~~~~~~~`\>-------<`\.@`\~~~~~~~~~~~~~
+  \/..__..--  .      \/  .  ..____( _)@@@--..____\..--\@@@/~`\@@>-._   \/ .
+\/         \/ \/    \/     / - -\@@@@--@/- - \@@@/ - - \@/- -@@@@/- \.   --._
+   .   \/    _..\/-...--.. |- - -\@@/ - -\@@@@/~~~~\@@@@/- - \@@/- - |   .\/
+        .  \/              | - - -@@ - - -\@@/- - - \@@/- - - @@- - -|      .
+. \/             .   \/     ~-.__ - - - - -@@- - - - @@- - - - -__.-~  . \/
+   __...--..__..__       .  \/   ~~~--..____- - - - -____..--~~~    \/_..--..
+\/  .   .    \/     \/    __..--... \/      ~~~~~~~~~     \/ . \/  .
+``` 
+[`Python`](https://github.com/topics/python) is a dynamically typed programming language designed by Guido van Rossum. Much like the programming language Ruby, Python was designed to be easily read by programmers. Because of its large following and many libraries, Python can be implemented and used to do anything from webpages to scientific research.  
+
+
+Course Objectives:  
+==================
+This course introduces core programming principles including data types, structures and algorithms.
+As well as program design with functions, classes, modules & packages.  
+The course discusses fundamental principles of Object-Oriented Programming, as
+well as in-depth data and information processing techniques. Students will solve problems,
+explore real-world software development challenges, and create practical and contemporary
+applications.  
+  
+Specific topic coverage:  
+* math, integers, floats  
+* Strings, Lists, Tuples, Sets, Dictionaries, Text Files  
+* Boolean logic and Numeric Data Types  
+* Algorithms and Information Processing
+* Control Structures
+* Procedural Abstraction in Function Definitions
+* Regex  
+* Objects and Classes
+* Networks and Client/Server Programming
+* Graphic User Interfaces (GUI)
+* Events and Event-driven Programming  
+
+Course Outline:  
+===============
+
+Lessons | Topics                                                | 
+------- | ----------------------------------------------------- | 
+   1    | intro, programs installation, IDE setup, basic syntax | 
+------- | ----------------------------------------------------- |    
+   2    | math, integers, floats, strings, lists, tuples        | 
+------- | ----------------------------------------------------- | 
+   3    | dictionaries, sets, conditions                        | 
+------- | ----------------------------------------------------- | 
+   4    | for loops, while loops                                | 
+------- | ----------------------------------------------------- | 
+   5    | functions, debugging                                  | 
+------- | ----------------------------------------------------- | 
+   6    | exception handling                                    | 
+------- | ----------------------------------------------------- | 
+   7    | algorithms                                            | 
+------- | ----------------------------------------------------- | 
+   8    | exception handling                                    | 
+------- | ----------------------------------------------------- | 
+   9    | real world challenges                                 | 
+------- | ----------------------------------------------------- | 
+  10    | files                                                 | 
+------- | ----------------------------------------------------- | 
+  11    | oop                                                   | 
+------- | ----------------------------------------------------- | 
+  12    | basic encryption & decryption                         | 
+------- | ----------------------------------------------------- | 
+  13    | planning & architecture                               | 
+------- | ----------------------------------------------------- | 
+  14    | game projects                                         | 
+------- | ----------------------------------------------------- | 
+  15    | planning & architecture                               | 
+------- | ----------------------------------------------------- | 
+  16    | web development server side                           | 
+------- | ----------------------------------------------------- | 
+  17    | sql type databases                                    | 
+------- | ----------------------------------------------------- | 
+  18    | serving applications using flask                      | 
+------- | ----------------------------------------------------- | 
+  19    | routing using flask                                   | 
+------- | ----------------------------------------------------- | 
+  20    | server validations                                    | 
+------- | ----------------------------------------------------- | 
+  21    | creating basic flask apps                             | 
+------- | ----------------------------------------------------- | 
+  22    | final project as a web app                            | 
+------- | ----------------------------------------------------- | 
+
+[`Exercises:`](https://github.com/yehonadav/python_course/tree/master/exercises)
+===============================================================================
+
+We have exercises with 5 different levels of difficulty ranging from 0-4  
+in addition we recommend these sites to further sharp your skills:  
+[`w3schools`](https://www.w3schools.com/python/python_exercises.asp)
+[`practicepython`](https://www.practicepython.org/)
+[`w3resource`](https://www.w3resource.com/python-exercises/python-basic-exercises.php)
+[`codingbat`](https://codingbat.com/python)
+[`github`](https://github.com/zhiwehu/Python-programming-exercises/blob/master/100%2B%20Python%20challenging%20programming%20exercises.txt)
+[`hackerrank`](https://www.hackerrank.com/domains/python) ...  
+  

@@ -48,23 +48,24 @@ class ThirdParty:
         client.store_data(new_data)
 
 
-storage_unit1 = SensitiveData()
-storage_unit2 = SensitiveData()
-storage_unit3 = SensitiveData()
-storage_unit4 = SensitiveData()
+if __name__ == '__main__':
+    storage_unit1 = SensitiveData()
+    storage_unit2 = SensitiveData()
+    storage_unit3 = SensitiveData()
+    storage_unit4 = SensitiveData()
 
-payment = ThirdParty()
+    payment = ThirdParty()
 
-clients = [
-    Client(
-        name=fake.name(),
-        data=create_random.numbers(length=8),
-        storage=storage_unit1,
-        third_party=payment
-    ) for i in range(10)]
+    clients = [
+        Client(
+            name=fake.name(),
+            data=create_random.numbers(length=8),
+            storage=storage_unit1,
+            third_party=payment
+        ) for i in range(10)]
 
-for client in clients:
-    for storage in (storage_unit1, storage_unit2, storage_unit3, storage_unit4):
+    for client in clients:
+        for storage in (storage_unit1, storage_unit2, storage_unit3, storage_unit4):
+            client.send_data_to_third_party()
+            client.switch_storage(storage)
         client.send_data_to_third_party()
-        client.switch_storage(storage)
-    client.send_data_to_third_party()
