@@ -130,4 +130,9 @@ in addition we recommend these sites to further sharp your skills:
 [`codingbat`](https://codingbat.com/python)
 [`github`](https://github.com/zhiwehu/Python-programming-exercises/blob/master/100%2B%20Python%20challenging%20programming%20exercises.txt)
 [`hackerrank`](https://www.hackerrank.com/domains/python) ...  
-  
+
+Additional Resources:
+---------------------  
+[`Think Python`](https://greenteapress.com/wp/think-python-2e/) is a very good book you may want to read to complement your studies. PDF is free.  
+[`Flask Documentation`](http://flask.pocoo.org/docs/1.0/tutorial/)  
+[`flask mega tutorial`](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)  
