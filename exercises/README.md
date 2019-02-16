@@ -252,9 +252,27 @@ if endurance < 1: endurance = 1
   the date of the competition,  
   winner name, the distance,  
   the winner run time  
-
   
+(28)  Create ```Hello World``` flask app 
+  
+(29)  Create a flask app with 4 routes  
     
+(30)  Create a flask app with port 80(http protocol) and open your app to other devices  
+  
+(31)  Create a flask app with a styled page using html  
+  
+(32)  Create a flask app  
+* serve an html template  
+* the route will receive a name argument and pass it to the template  
+
+(33)  Create a ```staticfiles``` flask app with route that receives a page name and renders a template by that name.  
+
+(34)  Create a simple login flask app  
+![flask_login](https://github.com/yehonadav/python_course/blob/master/exercises/images/flask_login.JPG?raw=true)  
+
+(35)  Create a simple form flask app with validations  
+![flask_form](https://github.com/yehonadav/python_course/blob/master/exercises/images/flask_form.JPG?raw=true)  
+  
   
 level 2:  
 ---------
@@ -390,6 +408,11 @@ Your quiz will prompt a user with a sentence
 containing several blanks. The user should then be asked to fill in each blank appropriately to complete the sentence.  
   
 (12)  create a tic tac toe game  
+  
+(13)  Create a simple pie, bar & line charts flask app with using Chart.min.js  
+![flask_pie_chart](https://github.com/yehonadav/python_course/blob/master/exercises/images/flask_pie_chart.JPG?raw=true)  
+![flask_line_chart](https://github.com/yehonadav/python_course/blob/master/exercises/images/flask_line_chart.JPG?raw=true)  
+![flask_bar_chart](https://github.com/yehonadav/python_course/blob/master/exercises/images/flask_bar_chart.JPG?raw=true)  
   
   
 level 3:  
