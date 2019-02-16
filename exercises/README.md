@@ -414,6 +414,8 @@ containing several blanks. The user should then be asked to fill in each blank a
 ![flask_line_chart](https://github.com/yehonadav/python_course/blob/master/exercises/images/flask_line_chart.JPG?raw=true)  
 ![flask_bar_chart](https://github.com/yehonadav/python_course/blob/master/exercises/images/flask_bar_chart.JPG?raw=true)  
   
+(14)  Create a simple login flask app with sqlite database & 3 users using sqlalchemy  
+  
   
 level 3:  
 ---------
