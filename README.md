@@ -1,11 +1,8 @@
 <h1 align="center" text-align="center">
   <a href="https://www.python.org">
-    <img src="https://www.python.org/static/opengraph-icon-200x200.png" alt="Sublime's custom image"/>
+    Python Course <img src="https://www.python.org/static/opengraph-icon-200x200.png" alt="Sublime's custom image"/> Nano Degree
   </a>
 </h1>
-
-# Python Course [![Python Course](https://www.python.org/static/opengraph-icon-200x200.png)](https://www.python.org)  Nano Degree
-
 
 ```                         
                                                    ,:
