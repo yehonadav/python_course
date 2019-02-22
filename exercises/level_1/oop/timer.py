@@ -1,3 +1,4 @@
+from typing import Callable
 from exercises.level_1.oop.inherit import Date
 
 
@@ -7,7 +8,17 @@ class Measurement:
 
 
 class Timer(Date):
-    def __init__(self, f, *args, **kwargs):
+    def __init__(self, f: Callable, *args, **kwargs):
+        """
+        create a timing object that receives a function 'f' and its arguments
+        and can run the function and measure the run time of the function.
+        usage example:
+            t = Timer(f)
+            t.start()
+        :param f: a function to run
+        :param args: function's arguments
+        :param kwargs: function's keyword arguments
+        """
         self.operation = f
         self.args = args
         self.kwargs = kwargs

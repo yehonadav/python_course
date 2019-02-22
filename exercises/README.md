@@ -253,24 +253,28 @@ if endurance < 1: endurance = 1
   winner name, the distance,  
   the winner run time  
   
-(28)  Create ```Hello World``` flask app 
-  
-(29)  Create a flask app with 4 routes  
+(27)  in ```timer.py``` class ```Timer```  
+* add doc string explaining the Timer API
+* add a hint typing for ```f``` argument hinting it is a function (callable)  
     
-(30)  Create a flask app with port 80(http protocol) and open your app to other devices  
+(29)  Create ```Hello World``` flask app 
   
-(31)  Create a flask app with a styled page using html  
+(30)  Create a flask app with 4 routes  
+    
+(31)  Create a flask app with port 80(http protocol) and open your app to other devices  
   
-(32)  Create a flask app  
+(32)  Create a flask app with a styled page using html  
+  
+(33)  Create a flask app  
 * serve an html template  
 * the route will receive a name argument and pass it to the template  
 
-(33)  Create a ```staticfiles``` flask app with route that receives a page name and renders a template by that name.  
+(34)  Create a ```staticfiles``` flask app with route that receives a page name and renders a template by that name.  
 
-(34)  Create a simple login flask app  
+(35)  Create a simple login flask app  
 ![flask_login](https://github.com/yehonadav/python_course/blob/master/exercises/images/flask_login.JPG?raw=true)  
 
-(35)  Create a simple form flask app with validations  
+(36)  Create a simple form flask app with validations  
 ![flask_form](https://github.com/yehonadav/python_course/blob/master/exercises/images/flask_form.JPG?raw=true)  
   
   

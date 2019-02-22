@@ -87,11 +87,11 @@ print(16 ** 0.5)
 gutin1 = 'daniel gutin'
 gutin2 = "daniel gutin"
 gutin3 = '''
-daniel 
+daniel
 gutin
 '''
 gutin4 = """
-daniel 
+daniel
 gutin
 """
 # מחרוזות ניתן לחבר כמו מספרים
