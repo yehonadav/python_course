@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+{% block body %}
+{% if session['logged_in'] %}
+<p>You're logged in already!</p>
+{% else %}
+
+
+<form action="/save_user_content" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="login-form">
+				<div class="control-group">
+				<input type="text" class="login-field" value="{{name}}" placeholder="username" name="username">
+				<label class="login-field-icon fui-user" for="login-name"></label>
+				</div>
+
+				<div class="control-group">
+				<input type="text" class="login-field" value="{{content}}" placeholder="content" name="content">
+				<label class="login-field-icon fui-user" for="login-name"></label>
+				</div>
+
+                <input type="submit" value="save content" class="btn btn-primary btn-large btn-block" >
+			    <br>
+			</div>
+		</div>
+	</div>
+</form>
+
+{% endif %}
+{% endblock %}
