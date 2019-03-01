@@ -1,10 +1,11 @@
 # login page save new users
 # home page -> user content page, save user content
+import os
 from flask import Flask
 from flask import render_template
 from flask import request
 from flask import session
-from flask import flash
+from flask import jsonify
 
 
 app = Flask('my app')
@@ -21,28 +22,18 @@ def login(user=None):
 
 
 @app.route('/login', methods=['POST'])
-def do_admin_login():
-    users = {'gal': '123', 'or': '123', 'itay': '123'}
+def auth_user():
     name = request.form['username']
-    if request.form['username'] in users:
-        password = users[name]
-        if password == request.form['password']:
-            session['logged_in'] = True
-            return login(name)
-    else:
-        flash('wrong password!')
+    if not os.path.exists('users\\'+name):
+        open('users\\'+name, 'w').close()
+    session['logged_in'] = False
     return login(name)
 
 
 @app.route('/home', methods=['GET'])
 def home(user):
-    import os
-    if not os.path.exists(user):
-        open(user, 'w').close()
-
-    with open(user) as db:
-        content = db.read()
-
+    if not os.path.exists(user): open('users\\'+user, 'w').close()
+    with open('users\\'+user) as db: content = db.read()
     return render_template('userhome.html', name=user, content=content)
 
 
@@ -50,7 +41,7 @@ def home(user):
 def save_user_content():
     user = request.form['username']
     content = request.form['content']
-    with open(user, 'w') as db:
+    with open('users\\'+user, 'w') as db:
         db.write(content)
     return content
 
