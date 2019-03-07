@@ -520,7 +520,7 @@ Write once, use anywhere.
 {% endblock %}
 ```  
 * run the app:  
-![jinja-super](exercises/images/jinja_flask_with_navbar_and_footers.JPG)  
+![jinja_flask_with_navbar_and_footers](exercises/images/jinja_flask_with_navbar_and_footers.JPG)  
   
     
 level 2:  
