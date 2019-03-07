@@ -99,12 +99,13 @@ Lessons | Topics                                                |
   14    | game projects                                         | 
   15    | planning & architecture                               | 
   16    | web development server side                           | 
-  17    | sql type databases                                    | 
-  18    | serving applications using flask                      | 
-  19    | routing using flask                                   | 
-  20    | server validations                                    | 
-  21    | creating basic flask apps                             | 
-  22    | final project as a web app                            | 
+  17    | jinja2 templating                                     | 
+  18    | sql type databases                                    | 
+  19    | serving applications using flask                      | 
+  20    | routing using flask                                   | 
+  21    | server validations                                    | 
+  22    | creating basic flask apps                             | 
+  23    | final project as a web app                            | 
 
 [`Exercises:`](https://github.com/yehonadav/python_course/tree/master/exercises)
 ===============================================================================
