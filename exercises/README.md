@@ -489,6 +489,6 @@ good luck!
 level 4:  
 ---------
     
-...
+![game over](https://github.com/yehonadav/python_course/blob/master/exercises/images/coming_soon.png?raw=true)  
 
   
