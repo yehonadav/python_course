@@ -500,7 +500,7 @@ if __name__ == '__main__':
 ```  
 Now every single child template that extends from the layout, will have the same navigation bar.  
 Write once, use anywhere.  
-* Add a footer block to the layout template at the end of <div class="container">:  
+* Add a footer block to the layout template at the end of ```<div class="container">```:  
 ```html
 <div class="footer">
   {% block footer %}
