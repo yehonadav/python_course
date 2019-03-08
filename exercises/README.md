@@ -380,7 +380,7 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def template_test():
+def template_index():
     """Here we are establishing the route /, 
     which renders the template template.html 
     via the function render_template(). 
@@ -522,7 +522,197 @@ Write once, use anywhere.
 * run the app:  
 ![jinja_flask_with_navbar_and_footers](https://github.com/yehonadav/python_course/blob/master/exercises/images/jinja_flask_with_navbar_and_footers.JPG?raw=true)  
   
-    
+(43)  in ```with_flask``` app:  
+The super block is used for common code  
+that both the parent and child templates share,  
+such as the <title> where both templates share part of the title,  
+then you would just need to pass in the other part. Or for a heading. For example:  
+  
+  **Parent**
+
+  ```html
+  {% block heading %}
+    <h1>{% block page %}{% endblock %} - Flask Super Example</h1>
+  {% endblock %}
+  ```
+
+  **Child**
+
+  ```html
+  {% block page %}Home{% endblock %}
+  {% block heading %}
+    {{ super() }}
+  {% endblock %}
+  ```  
+add these and run the app:  
+* make sure to send a title parameter in the ```template_index``` route under ```app/__init__.py```  
+* *layout.html*:
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    {% block head %}
+      <title>{% block title %}{% endblock %} - Flask With Jinja Example</title>
+    {% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+      .container {
+        max-width: 1000px;
+        padding-top: 100px;
+      }
+      h2 {color: red;}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://jinja.pocoo.org/">Jinja</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Go</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Manage</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Help</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      {% block heading %}
+        <h1>
+          {% block page %}{% endblock %} - Flask With Jinja Example
+        </h1>
+      {% endblock %}
+      
+      <h2>Before-Block: This is the layout. block templates are inside:</h2>
+      <br>
+      {% block content %}{% endblock %}
+      <br>
+      <h2>After-Block: This is the layout. block templates are inside:</h2>
+      <!--
+        The block defines a block (or area) that child templates can fill in.
+        Further, this just informs the templating engine that a child template may override
+        the block of the template.
+
+        Think of these as placeholders to be filled in by code from the child template(s).
+       -->
+
+      <br>
+      <div class="footer" style="color: green">
+        {% block footer %}
+          This will be added to the layout and child templates using `super` block!
+          <br>
+          <br>
+          <br>
+        {% endblock %}
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
+```  
+* *template.html*:  
+```html
+{% extends "layout.html" %}
+
+{% block title %}
+  {{title}}
+{% endblock %}
+
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+{% block page %}
+  {{title}}
+{% endblock %}
+
+{% block heading %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+  <h3>In-Block-Start: This is a block template nesting inside the layout</h3>
+  <br>
+  <!--
+    the `extends` informs the templating engine that this template
+    "extends" another template, layout.html. This establishes the link between the templates.
+  -->
+  <p>
+    It's worth noting that Jinja only supports a few control structures -
+    if-statements & for-loops are the two primary structures.
+    The syntax is similar to Python, differing in that no colon is required
+    and that termination of the block is done using an endif or endfor
+    instead of by whitespace. You can also complete the logic within your controller
+    or views and then pass each value to the template using the template tags.
+    However, it is much easier to perform such logic within the templates themselves.
+  </p>
+  <p>string variable: {{string_variable}}</p>
+  <p>list index 0 value: {{list_variable[0]}}</p>
+  <p>Loop through the list:</p>
+  <ul>
+    {% for n in list_variable %}
+    <li>{{n}}</li>
+    {% endfor %}
+  </ul>
+  <br>
+  <h4>Inheritance</h4>
+  <p>
+    Templates usually take advantage of <a href="http://jinja.pocoo.org/docs/templates/#template-inheritance">inheritance</a>,
+    which includes a single base template that defines the basic structure
+    of all subsequent child templates.
+    You use the tags `extends` and `block` to implement inheritance.
+
+    The use case for this is simple: as your application grows,
+    and you continue adding new templates, you will need to keep common code
+    (like a HTML navigation bar, Javascript libraries, CSS stylesheets, and so forth) in sync,
+    which can be a lot of work.
+    Using inheritance, we can move those common pieces to a parent template
+    so that we can create or edit such code one and all child templates will inherent such code.
+  </p>
+
+  <h3>In-Block-End: This is a block template nesting inside the layout</h3>
+  {% block footer %}
+  {{super()}}
+  {% endblock %}
+{% endblock %}
+```  
+  
+(44)  in ```with_flask``` app:  
+* add a *home* route:  
+![jinja_flask_home](https://github.com/yehonadav/python_course/blob/master/exercises/images/jinja_flask_home.png?raw=true)  
+  
+  
+  
 level 2:  
 ---------
   

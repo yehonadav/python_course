@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Flask With Jinja Example</title>
+    {% block head %}
+      <title>{% block title %}{% endblock %} - Flask With Jinja Example</title>
+    {% endblock %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <style type="text/css">
@@ -53,6 +55,12 @@
     </nav>
 
     <div class="container">
+      {% block heading %}
+        <h1>
+          {% block page %}{% endblock %} - Flask With Jinja Example
+        </h1>
+      {% endblock %}
+      
       <h2>Before-Block: This is the layout. block templates are inside:</h2>
       <br>
       {% block content %}{% endblock %}

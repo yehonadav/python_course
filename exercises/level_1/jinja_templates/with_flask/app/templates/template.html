@@ -1,4 +1,21 @@
 {% extends "layout.html" %}
+
+{% block title %}
+  {{title}}
+{% endblock %}
+
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+{% block page %}
+  {{title}}
+{% endblock %}
+
+{% block heading %}
+  {{ super() }}
+{% endblock %}
+
 {% block content %}
   <h3>In-Block-Start: This is a block template nesting inside the layout</h3>
   <br>
