@@ -112,18 +112,54 @@ if "__main__" == __name__:
     database = DataBaseExtention(db_file, log)
 
     # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-    database.execute(database.command.drop_table.format('users'))
-    database.execute(database.command.create_users_table)
-    database.execute(database.command.add_user.format('cs0008', '123123a'))
-    database.execute(database.command.add_user.format('af0006', '123123a'))
-    database.execute(database.command.add_user.format('jh0003', '123123a'))
-    database.execute(database.command.add_user.format('kb0004', '123123a'))
-    database.execute(database.command.add_user.format('op0001', '123123a'))
-    database.execute(database.command.add_user.format('gv0001', '123123a'))
-    database.execute(database.command.add_user.format('pm0001', '123123a'))
-    database.execute(database.command.add_user.format('ps0001', '123123a'))
-    database.execute(database.command.add_user.format('qa0000', '123123a'))
-    user_credentials = database.get_user_credentials(id='14')
-    database.connection.commit()
+    # database.execute(database.command.drop_table.format('users'))
+    # database.execute(database.command.create_users_table)
+    # database.execute(database.command.add_user.format('cs0008', '123123a'))
+    # database.execute(database.command.add_user.format('af0006', '123123a'))
+    # database.execute(database.command.add_user.format('jh0003', '123123a'))
+    # database.execute(database.command.add_user.format('kb0004', '123123a'))
+    # database.execute(database.command.add_user.format('op0001', '123123a'))
+    # database.execute(database.command.add_user.format('gv0001', '123123a'))
+    # database.execute(database.command.add_user.format('pm0001', '123123a'))
+    # database.execute(database.command.add_user.format('ps0001', '123123a'))
+    # database.execute(database.command.add_user.format('qa0000', '123123a'))
+    # user_credentials = database.get_user_credentials(id='14')
+    # database.connection.commit()
+    # database.connection.close()
+    # print(user_credentials)
+
+
+    # create a simple database with websites table that includes (
+    #   url: varchar(1024),
+    #   popularity_score: integer,
+    #   monthly_visitations: integer
+    # )
+
+    # database.command.create_websites_table = '''
+    #     CREATE TABLE IF NOT EXISTS websites (
+    #         id INTEGER PRIMARY KEY AUTOINCREMENT,
+    #         url TEXT,
+    #         popularity_score INTEGER,
+    #         monthly_visitations INTEGER
+    #     )
+    # '''
+    # database.command.add_website = 'INSERT INTO websites (url, popularity_score, monthly_visitations) VALUES (\'{}\', \'{}\', \'{}\');'
+    # database.execute(database.command.create_websites_table)
+    # database.execute(database.command.add_website.format('https://www.google.com', 5, 4000000000))
+    # database.execute(database.command.add_website.format('https://www.ynet.com', 3, 5000000))
+    # database.execute(database.command.add_website.format('https://www.youtube.com', 6, 1300000000))
+    # database.execute(database.command.add_website.format('https://www.python.org', 5, 1000000))
+
+    # database.command.get_site = 'SELECT url, popularity_score, monthly_visitations FROM websites WHERE url = \'{}\';'
+    # url, popularity, visitations = database.fetch(database.command.get_site.format('https://www.python.org'))[0]
+    #
+    # print(url, popularity, visitations)
+
+    database.export_from_table_to_file(
+        table='websites',
+        file_name='exported.csv',
+        titles=('id', 'url', 'popularity_score', 'monthly_visitations')
+    )
+
+    # database.connection.commit()
     database.connection.close()
-    print(user_credentials)
