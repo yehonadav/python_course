@@ -59,7 +59,7 @@ pytest-xdist==1.23.2
 python-dateutil==2.7.3
 pyxel==0.9.9
 pyyaml>=4.2b1
-qaviton==0.0.7
+qaviton>=0.0.11
 requests>=2.20.0
 selenium==3.14.1
 six==1.11.0

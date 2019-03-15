@@ -92,10 +92,10 @@ def register():
 
         # Execute query
         db.execute("INSERT INTO users(name, email, username, password) VALUES('{}', '{}', '{}', '{}');"
-                   .format(name, email, username, password))
+                   .format(name, email, username, password))  # what if username already exist???
 
         # Commit to DB
-        get_db().commit()
+        get_db().commit()  # is this ok ?
 
         flash('You are now registered and can log in', 'success')
 
@@ -168,8 +168,8 @@ def dashboard():
     # Create cursor
     db = get_db()
 
-    # Get articles
-    articles = db.execute("SELECT * FROM articles;")
+    # Get user articles
+    articles = db.execute("SELECT * FROM articles;")  # what is missing in this query??
 
     if len(articles) > 0:
         return render_template('dashboard.html', articles=articles)
@@ -201,7 +201,7 @@ def add_article():
                    .format(title, body, session['username'], datetime.datetime.now()))
 
         # Commit to DB
-        get_db().commit()
+        db.commit()
 
         flash('Article Created', 'success')
 
@@ -220,28 +220,31 @@ def edit_article(id):
     # Get article by id
     article = db.execute("SELECT * FROM articles WHERE id = '{}';".format(id))[0]
 
-    db.close()
+    db.close()  # is this necessary?
+
     # Get form
     form = ArticleForm(request.form)
 
     # Populate article form fields
-    form.title.data = article['title']
-    form.body.data = article['body']
+    form.title.data = article[1]
+    form.body.data = article[2]
 
     if request.method == 'POST' and form.validate():
-        title = request.form['title']
-        body = request.form['body']
+        title = request.form[1]
+        body = request.form[2]
 
         # Create Cursor
         db = get_db()
-        app.logger.info(title)
+
+        app.logger.info(title)  # what's this??
+
         # Execute
         db.execute("UPDATE articles SET title='{}', body='{}' WHERE id='{}';".format(title, body, id))
+
         # Commit to DB
-        get_db().commit()
+        db.commit()
 
         flash('Article Updated', 'success')
-
         return redirect(url_for('dashboard'))
 
     return render_template('edit_article.html', form=form)
@@ -251,17 +254,16 @@ def edit_article(id):
 @app.route('/delete_article/<string:id>', methods=['POST'])
 @is_logged_in
 def delete_article(id):
-    # Create cursor
-    cur = get_db().cursor()
+    # get database connection
+    db = get_db()
 
-    # Execute
-    cur.execute("DELETE FROM articles WHERE id = '{}';".format(id))
+    # execute deletion
+    db.execute("DELETE FROM articles WHERE id = '{}';".format(id))
 
-    # Commit to DB
-    get_db().commit()
+    # commit to DB
+    db.commit()
 
     flash('Article Deleted', 'success')
-
     return redirect(url_for('dashboard'))
 
 
