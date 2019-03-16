@@ -39,7 +39,7 @@ basic instructions:
 -------------------
 
 each collaborator must share his IP, port number and routes as well as an api of the routes.  
-each collaborator must share his source code via github, create a project and share it with other collaborators.  
+each collaborator must share his source code via github: create a project and share it with other collaborators.  
 run the application from the same LAN as the other collaborators.  
 complicated services can be developed by a group of collaborators.  
 HAVE FUN!  
@@ -54,4 +54,5 @@ score system:
 * (+10) have at list 1 interaction with other projects apis  
 * (+14) make your project run correctly  
 * (+10) have your project interact correctly with all of its peers  
-* (+10 bonus) have the entire final project run properly 
+* (+10 bonus) have the entire final project run properly  
+*passing grade: 65*
