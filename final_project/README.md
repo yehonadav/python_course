@@ -55,4 +55,5 @@ score system:
 * (+14) make your project run correctly  
 * (+10) have your project interact correctly with all of its peers  
 * (+10 bonus) have the entire final project run properly  
-*passing grade: 65*
+  
+*passing grade: 65*  
