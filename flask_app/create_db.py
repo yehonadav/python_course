@@ -5,7 +5,7 @@ create_users = '''CREATE TABLE IF NOT EXISTS users (
                 name text,
                 email text,
                 username text,
-                password text);'''
+                password text);'''  # username should be UNIQUE
 
 create_articles = '''CREATE TABLE IF NOT EXISTS articles (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
