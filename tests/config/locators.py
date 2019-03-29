@@ -13,3 +13,10 @@ class locator(Locator):
     navbar_Articles = ('text', 'Articles')
     navbar_Login = ('xpath', "//*[@id='navbar']//*[text()='Login']")
     navbar_Register = ('xpath', "//*[@id='navbar']//*[text()='Register']")
+
+    register_name = ('id', 'name')
+    register_email = ('id', 'email')
+    register_username = ('id', 'username')
+    register_password = ('id', 'password')
+    register_re_password = ('id', 'confirm')
+    register_submit = ('type', 'submit')

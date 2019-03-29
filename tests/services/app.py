@@ -1,6 +1,7 @@
 from qaviton.navigator import Navigator
 from tests.pages.components.page import Page
 from tests.pages.home import HomePage
+from tests.pages.register import RegisterPage
 
 
 class App(Page):
@@ -11,5 +12,6 @@ class App(Page):
     def __init__(self, driver, platform):
         Page.__init__(self, driver, platform=platform)
         self.home = HomePage(driver)
+        self.register = RegisterPage(driver)
 
         self.navigate = Navigator(self.home, auto_connect=self)
