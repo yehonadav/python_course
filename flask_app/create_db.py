@@ -14,6 +14,11 @@ create_articles = '''CREATE TABLE IF NOT EXISTS articles (
                 author text,
                 create_date text);'''
 
-with DataBase('database.db') as db:
-    db.execute(create_users)
-    db.execute(create_articles)
+def create(db_path):
+    with DataBase(db_path) as db:
+        db.execute(create_users)
+        db.execute(create_articles)
+
+
+if __name__ == "__main__":
+    create('database.db')
