@@ -34,3 +34,4 @@ https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-l
 https://www.youtube.com/watch?v=K8L6KVGG-7o
 https://www.youtube.com/watch?v=ZdDOauFIDkw
 https://moz.com/blog/an-seos-guide-to-regex
+https://www.w3schools.com/python/python_regex.asp
