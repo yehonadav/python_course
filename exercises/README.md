@@ -707,10 +707,39 @@ add these and run the app:
 {% endblock %}
 ```  
   
-(44)  in ```with_flask``` app:  
+(44) in ```with_flask``` app:  
 * add a *home* route:  
 ![jinja_flask_home](https://github.com/yehonadav/python_course/blob/master/exercises/images/jinja_flask_home.png?raw=true)  
   
+(45) create ```hobbies.py```  
+* add these lines of code:  
+```
+from exercises.data import get_data
+from statistics import median
+import random
+
+users = get_data(2000)  
+```
+* create a list of hobbies  
+* create a second list of different hobbies  
+* create a __main__ = __name__ condition  
+
+(46) in ```hobbies.py```:  
+* create and run a function that extract users and measure their average age  
+* create and run a function that extract users and find the most common name  
+* create and run a function that extract users and measure their median  
+  
+(47) in ```hobbies.py```:  
+* create and run a function that adds a random hobby to users  
+  
+* create and run a function to count the hobbies and print their count  
+  
+* create and run a function that adds a second hobby from the same hobby pool,  
+  if the hobbies are the same, randomly change one of the hobbies  
+  to a new random hobby from a second hobby pool  
+  
+* create and run a function to count the hobbies from the second hobby pool  
+  and print their count  
   
   
 level 2:  
