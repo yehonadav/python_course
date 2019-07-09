@@ -103,9 +103,7 @@ def create_more_users(users):
     initial_users_size = len(users)
     timestamp = time.time()
     while time.time() - timestamp < 2:
-        user_set = get_data(10)
-        for user in user_set:
-            users.append(user)
+        users.extend(get_data(10))
     print(f'created {len(users)-initial_users_size} new users')
 
 
