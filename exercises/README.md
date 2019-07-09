@@ -833,18 +833,18 @@ add_second_hobby(users)
   if the 'created' key does not exist the caller should handle a KeyError exception.  
   
 (58) in ```loopers.py```:  
-* create a function named ```print_users_avg_uptime```  
+* create and run a function named ```print_users_avg_uptime```  
   the function receive ```(users)``` parameter, and  
   print the users average uptime  
   
 (59) in ```loopers.py```:  
-* create a function named ```find_equal_neighbor_age```  
+* create and run a function named ```find_equal_neighbor_age```  
   the function receive ```(users)``` parameter, and  
   iterate the users, if 2 neighboring users have the same age  
   a message with their name and age is printed before the function returns  
   
 (60) in ```loopers.py```:  
-* create a function named ```create_more_users```  
+* create and run a function named ```create_more_users```  
   the function receive ```(users)``` parameter, and  
   loops for ~2 seconds, while looping the function creates users
   in sets of 10 and adds them to the main users list  
