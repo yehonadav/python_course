@@ -2,7 +2,6 @@ from exercises.data import get_data
 from statistics import median
 import random
 
-users = get_data(2000)
 
 hobbies = [
     'football',
@@ -92,6 +91,8 @@ def count_hobbies2(users):
 
 
 if __name__ == '__main__':
+    users = get_data(2000)
+
     measure_users_average_age(users)
     find_most_common_user_name(users)
     measure_users_median_age(users)
@@ -99,4 +100,5 @@ if __name__ == '__main__':
     add_random_hobby(users)
     count_hobbies(users)
     add_second_hobby(users)
+    print('\n\n\n\n\n')
     count_hobbies2(users)
