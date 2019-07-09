@@ -757,7 +757,7 @@ from exercises.level_1.hobbies import add_random_hobby, add_second_hobby, hobbie
 * create and run a function named ```get_addresses```  
   the function receive ```(users, start=0, stop=50)``` parameters,  
   iterates through users and return a list of user addresses  
-  staring with the starting point up to the stop point.  
+  starting with the starting point up to the stop point.  
   
 (50) in ```loopers.py```:  
 * create and run a function named ```count_address_numbers```  
