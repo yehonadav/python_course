@@ -15,7 +15,7 @@ coverage==4.5.1
 cryptography==2.3.1
 decorator==4.3.2
 execnet==1.5.0
-Faker==0.9.1
+Faker==1.0.7
 Flask==1.0.2
 Flask-Bcrypt==0.7.1
 Flask-Login==0.4.1
