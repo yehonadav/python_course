@@ -39,7 +39,7 @@ The power of lambda is better shown when you use them as an anonymous function i
 # Say you have a function definition that takes one argument,
 # and that argument will be multiplied with an unknown number:
 def multiply_by(n):
-  return lambda a : a * n
+    return lambda a: a * n
 
 double_trouble = multiply_by(2)
 triple_trouble = multiply_by(3)
