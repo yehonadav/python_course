@@ -122,6 +122,7 @@ in addition we recommend these sites to further sharp your skills:
 Additional Resources:
 ---------------------  
 [`Think Python`](https://greenteapress.com/wp/think-python-2e/) is a very good book you may want to read to complement your studies. PDF is free.  
+[`joeyajames tutorials`](https://github.com/joeyajames/Python) awesome tutorials and youtube channel  
 [`Flask Documentation`](http://flask.pocoo.org/docs/1.0/tutorial/)  
 [`Basic Flask Exercises`](https://pythonspot.com/flask-web-app-with-python/)  
 [`flask mega tutorial`](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)  
