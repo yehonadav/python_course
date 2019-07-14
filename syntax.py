@@ -13,6 +13,7 @@ first_name = 'Yosi Dahan'
 
 # ידפיס את הערך של VAR
 print(var)
+print(first_name)
 
 ##############
 # # הקצאת שמות

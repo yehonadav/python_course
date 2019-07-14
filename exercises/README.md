@@ -987,6 +987,41 @@ print set of the matches for all user hobbies
 (95) in ```simple_regex.py``` in combined_data text  
 print set of all ip occurrences  
   
+(96) create ```map_reduce_filter.py```  
+* create a ```calc``` function to calculate item length multiplied  
+  by its partial divergent series, example: ```python
+  calc('abc') -> 3 * (1+2+3) -> returns 18
+  ```
+* declare this variable: ```ai = ['6.', '40.0', '75.00', '126.00']```  
+* use the map function to calc ```ai``` and save the result  
+* print the sum of the result  
+
+(97) in ```map_reduce_filter.py```  
+* declare this variable: ```names = ['Tom', 'Gon', 'Don', 'Bon']```  
+* use the map function to create upper names  
+* use the map function to create lower names  
+* print the names  
+  
+(98) in ```map_reduce_filter.py```  
+* import: ```from exercises.data import get_data```  
+* create 10 users using imported function  
+* map user names  
+* print the names    
+  
+(99) in ```map_reduce_filter.py```  
+* using these code lines:  
+```python
+def combo(a, b):
+    return a + b
+
+yummy_fruits = ('apple', 'banana', 'cherry')
+sour_fruits = ('orange', 'lemon', 'pineapple')
+```  
+* use the map function to create a fruit 'combo' (combine the fruits to 1 data structure)  
+* count the fruits and print them  
+  
+  
+  
 level 2:  
 ---------
   

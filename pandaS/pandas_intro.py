@@ -136,10 +136,8 @@ df2 = pd.DataFrame({
 print(df2)
 
 # The columns of the resulting DataFrame have different dtypes
-try:
-    print(df2.types)
-except AttributeError:
-    pass
+print('\n\n\n', df2.dtypes, '\n\n\n')
+
 
 # Viewing Data
 
