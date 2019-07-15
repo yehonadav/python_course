@@ -10,6 +10,7 @@ def create_user():
         'age': random.randint(0, 121),
         'birth': random.randint(1900, 2019),
         'automotive_number': fake.license_plate(),
+        'phone_number': fake.phone_number(),
         'bank_account': fake.iban(),
         'favorite_color': fake.safe_color_name(),
         'company': fake.company(),

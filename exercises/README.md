@@ -987,7 +987,7 @@ print set of the matches for all user hobbies
 (95) in ```simple_regex.py``` in combined_data text  
 print set of all ip occurrences  
   
-(96) create ```map_reduce_filter.py```  
+(96) create ```map_reduce_filter.py``` create and run a function to:  
 * create a ```calc``` function to calculate item length multiplied  
   by its partial divergent series, example: ```python
   calc('abc') -> 3 * (1+2+3) -> returns 18
@@ -996,19 +996,19 @@ print set of all ip occurrences
 * use the map function to calc ```ai``` and save the result  
 * print the sum of the result  
 
-(97) in ```map_reduce_filter.py```  
+(97) in ```map_reduce_filter.py``` create and run a function to:  
 * declare this variable: ```names = ['Tom', 'Gon', 'Don', 'Bon']```  
 * use the map function to create upper names  
 * use the map function to create lower names  
 * print the names  
   
-(98) in ```map_reduce_filter.py```  
+(98) in ```map_reduce_filter.py``` create and run a function to:  
 * import: ```from exercises.data import get_data```  
 * create 10 users using imported function  
 * map user names  
 * print the names    
   
-(99) in ```map_reduce_filter.py```  
+(99) in ```map_reduce_filter.py``` create and run a function to:  
 * using these code lines:  
 ```python
 def combo(a, b):
@@ -1020,6 +1020,35 @@ sour_fruits = ('orange', 'lemon', 'pineapple')
 * use the map function to create a fruit 'combo' (combine the fruits to 1 data structure)  
 * count the fruits and print them  
   
+(100) in ```map_reduce_filter.py``` create and run a function to:  
+* filter all yummy fruits with 'a'
+* filter all sour fruits starting with 'o' or ending with 'le'  
+  
+(101) in ```map_reduce_filter.py```  
+* use these lines of code:  
+```python
+from exercises.data import get_data
+from exercises.helpers import random_range
+import random
+users = get_data(1000)
+for _ in random_range(3, 30):
+    suspect1 = users[random.randint(0, 999)]
+    suspect2 = users[random.randint(0, 999)]
+    suspect1['email'] = suspect2['email']
+    print(suspect1['email'])
+```  
+* map users to contain only their name, address, email, phone_number, age
+* convert the map to a list  
+* find users that are suspect to fraud (users with the same email)  
+* print suspects with their name, address, email and phone number  
+* filter all users who are minors 0-18  
+* filter all users who are middle aged 19-39  
+* filter all users beyond 39yo  
+* list all fraud suspects to 1 list  
+* filter all fraud suspects who are minors 0-18  
+* filter all fraud suspects who are middle aged 19-39  
+* filter all fraud suspects beyond 39yo  
+* calculate and print which age group is more susceptible to fraud  
   
   
 level 2:  
