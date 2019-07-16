@@ -23,3 +23,5 @@ import pandas as pd
 
 filename = __file__.replace('pandas_intro2.py', 'weather.txt')
 df = pd.read_csv(filename)
+# https://www.w3resource.com/python-exercises/pandas/index.php
+# https://github.com/codebasics/py/blob/master/pandas/21_sql/pandas_sql.ipynb

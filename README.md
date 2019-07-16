@@ -126,3 +126,4 @@ Additional Resources:
 [`Flask Documentation`](http://flask.pocoo.org/docs/1.0/tutorial/)  
 [`Basic Flask Exercises`](https://pythonspot.com/flask-web-app-with-python/)  
 [`flask mega tutorial`](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)  
+[`PerformanceTips`](https://wiki.python.org/moin/PythonSpeed/PerformanceTips) Performance Tips  
