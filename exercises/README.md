@@ -1021,10 +1021,22 @@ sour_fruits = ('orange', 'lemon', 'pineapple')
 * count the fruits and print them  
   
 (100) in ```map_reduce_filter.py``` create and run a function to:  
-* filter all yummy fruits with 'a'
+* filter all yummy fruits with 'a'  
 * filter all sour fruits starting with 'o' or ending with 'le'  
-  
+
 (101) in ```map_reduce_filter.py```  
+* use these lines:  
+```python
+from exercises.data import get_data
+import random
+users = get_data(random.randint(4, 6))
+```  
+create and run a function to:  
+* map users age  
+* filter all ages < 18  
+* print filtered ages  
+    
+(102) in ```map_reduce_filter.py```  
 * use these lines of code:  
 ```python
 from exercises.data import get_data
@@ -1041,14 +1053,70 @@ for _ in random_range(3, 30):
 * convert the map to a list  
 * find users that are suspect to fraud (users with the same email)  
 * print suspects with their name, address, email and phone number  
-* filter all users who are minors 0-18  
-* filter all users who are middle aged 19-39  
-* filter all users beyond 39yo  
+* filter all users with an age range of 0-17  
+* filter all users with an age range of 18-59  
+* filter all users with an age range of 60+  
 * list all fraud suspects to 1 list  
-* filter all fraud suspects who are minors 0-18  
-* filter all fraud suspects who are middle aged 19-39  
-* filter all fraud suspects beyond 39yo  
+* filter all fraud suspects with an age range of 0-17  
+* filter all fraud suspects with an age range of 18-59  
+* filter all fraud suspects with an age range of 60+  
 * calculate and print which age group is more susceptible to fraud  
+  
+(103) in ```map_reduce_filter.py``` create and run a function to:  
+* get 5 users  
+* use list comprehension to get their birth year  
+* use a reducer to get the birth summary  
+* print the birth sum and the average sum of the collected years  
+  
+(104) in ```map_reduce_filter.py``` create and run a function to:  
+* create 500,000 users with {name, birth, age} fields  
+* create a birth_iterator using list comprehension  
+* create a birth_iterator using map  
+* use the time module to measure the durations of these operations  
+* print out which operation performs faster  
+* create a name_iterator from names starting with a-m using list comprehension  
+* create a name_iterator from names starting with a-m using filter  
+* use the time module to measure the durations of these operations  
+* print out which operation performs faster  
+  
+(105) in ```map_reduce_filter.py```  
+* using this calender:  
+```python
+calender_2019_07_11 = [
+    [0, 7],  # sleep
+    [7, 8],  # getting ready for work
+    [8, 9],  # drive to work
+    [9, 10],  # reading emails
+    [10, 12],  # working on assignment
+    [12, 13],  # launch break
+    [13, 15],  # working on assignment
+    [15, 16],  # in a meeting
+    [16, 17],  # working on assignment
+    [18, 19],  # fitness exercise
+    [19, 20],  # buying groceries
+    [20, 21],  # dinner break
+    [21, 24]  # hobbies and family time
+]
+```  
+* reduce the calender items by merging adjacent events  
+* print a result showing a clear picture of where we can insert more event  
+    
+(106) in ```map_reduce_filter.py``` create and run a function to:  
+* create 20 users  
+* print the maximum age using reduce  
+  
+(107) in ```map_reduce_filter.py``` create and run a function to:  
+* create 20 users  
+* print their sum birth using reduce and operator  
+  
+(108) in ```map_reduce_filter.py``` create and run a function to:  
+* create 20 users  
+* print the multiplication of birth+age of all users using reduce  
+  
+(109) in ```map_reduce_filter.py``` create and run a function to:  
+* create 20 users  
+* print the concatenated name+phone_number of all users using reduce  
+  
   
   
 level 2:  

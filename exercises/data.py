@@ -19,6 +19,14 @@ def create_user():
     }
 
 
+def get_lean_data(size):
+    return [{
+        'name': fake.name(),
+        'birth': random.randint(1900, 2019),
+        'age': random.randint(0, 121),
+    } for _ in range(size)]
+
+
 def get_data(size=10):
     return [create_user() for _ in range(size)]
 
