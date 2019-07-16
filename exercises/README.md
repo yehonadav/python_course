@@ -998,14 +998,14 @@ print set of all ip occurrences
 
 (97) in ```map_reduce_filter.py``` create and run a function to:  
 * declare this variable: ```names = ['Tom', 'Gon', 'Don', 'Bon']```  
-* use the map function to create upper names  
-* use the map function to create lower names  
+* use the map function & lambda to create upper names  
+* use the map function & lambda to create lower names  
 * print the names  
   
 (98) in ```map_reduce_filter.py``` create and run a function to:  
 * import: ```from exercises.data import get_data```  
 * create 10 users using imported function  
-* map user names  
+* map user names (use lambda)  
 * print the names    
   
 (99) in ```map_reduce_filter.py``` create and run a function to:  
@@ -1021,8 +1021,8 @@ sour_fruits = ('orange', 'lemon', 'pineapple')
 * count the fruits and print them  
   
 (100) in ```map_reduce_filter.py``` create and run a function to:  
-* filter all yummy fruits with 'a'  
-* filter all sour fruits starting with 'o' or ending with 'le'  
+* filter all yummy fruits with 'a' (use lambda)  
+* filter all sour fruits starting with 'o' or ending with 'le' (use lambda)  
 
 (101) in ```map_reduce_filter.py```  
 * use these lines:  
@@ -1066,16 +1066,16 @@ for _ in random_range(3, 30):
 * get 5 users  
 * use list comprehension to get their birth year  
 * use a reducer to get the birth summary  
-* print the birth sum and the average sum of the collected years  
+* print the birth sum and the average sum of the collected years using reduce & lambda  
   
 (104) in ```map_reduce_filter.py``` create and run a function to:  
 * create 500,000 users with {name, birth, age} fields  
 * create a birth_iterator using list comprehension  
-* create a birth_iterator using map  
+* create a birth_iterator using map & lambda  
 * use the time module to measure the durations of these operations  
 * print out which operation performs faster  
 * create a name_iterator from names starting with a-m using list comprehension  
-* create a name_iterator from names starting with a-m using filter  
+* create a name_iterator from names starting with a-m using filter & lambda  
 * use the time module to measure the durations of these operations  
 * print out which operation performs faster  
   
@@ -1103,7 +1103,7 @@ calender_2019_07_11 = [
     
 (106) in ```map_reduce_filter.py``` create and run a function to:  
 * create 20 users  
-* print the maximum age using reduce  
+* print the maximum age using reduce & lambda  
   
 (107) in ```map_reduce_filter.py``` create and run a function to:  
 * create 20 users  
