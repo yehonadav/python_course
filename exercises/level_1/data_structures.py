@@ -119,6 +119,7 @@ print(lis1)
 # multiply users by 500
 # check if 2 users share the same email address
 
+# create another .py file
 # print this message: 'welcome to my game'
 # create a while loop
 # use the input function to print a menu like so:
