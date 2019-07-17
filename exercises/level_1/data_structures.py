@@ -109,12 +109,36 @@ lis1.sort(reverse=True)
 print(lis1)
 
 # get a random user from users
+import random
+random_user = random.choice(users)
+
 # get the user address
-# find 'A', 'B', 'c', 'd' indexes in the string
-# count all occurrences of 'A', 'B', 'c', 'd' in the string
+address = random_user['address']
+
+# find 'A', 'B', 'c', 'd' first indexes in the address, why -1 might get printed?
+print('index A:', address.find('A'))
+print('index B:', address.find('B'))
+print('index c:', address.find('c'))
+print('index d:', address.find('d'))
+
+# count all occurrences of 'A', 'B', 'c', 'd' in the address
+print('occurrences of A', address.count('A'))
+print('occurrences of B', address.count('B'))
+print('occurrences of c', address.count('c'))
+print('occurrences of d', address.count('d'))
+
 # get all user ages
+ages = [user['age'] for user in users]
+# ages = []
+# for user in users:
+#     ages.append(user['age'])
+
 # find the average age
-# find the middle age
+# find the middle(index wise) age
+# find the smallest age before sorting
+# find the biggest age before sorting
+# find the smallest age after sorting
+# find the biggest age after sorting
 # find the middle sorted age
 # multiply users by 500
 # check if 2 users share the same email address
