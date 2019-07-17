@@ -126,4 +126,15 @@ print(lis1)
 # (2) try again
 # (3) quit
 # if the user input is not 1,2 or 3 print an error message
-# if the user pressed
+# if the user pressed 3 break the loop
+# if the user press 1 activate a play function
+# if the user press 2 activate a replay function
+# create a play function
+#   create a number between 1-10
+#   save the number in a dictionary outside the function
+#   loop 3 times
+#       ask the user to guess the number
+#       if the answer is correct, print a message and return
+#       if the loop ended print a lose message and return
+# create a replay function that takes the random number from the dictionary
+# and use it to replay
