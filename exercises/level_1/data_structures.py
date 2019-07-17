@@ -134,8 +134,17 @@ ages = [user['age'] for user in users]
 #     ages.append(user['age'])
 
 # find the average age
+print('average age', sum(ages)/len(ages))
+# summ = 0
+# for age in ages:
+#     summ += age
+# avg = summ/len(ages)
+
 # find the middle(index wise) age
+print(ages[int(len(ages)/2)])
+
 # find the smallest age before sorting
+
 # find the biggest age before sorting
 # find the smallest age after sorting
 # find the biggest age after sorting
