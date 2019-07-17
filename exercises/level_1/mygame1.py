@@ -1,12 +1,17 @@
 import random
+
+
 data = {'choice': str(random.randint(1, 10))}
+
 
 def set_choice():
     data['choice'] = str(random.randint(1, 10))
     return data['choice']
 
+
 def get_choice():
     return data['choice']
+
 
 def play(choice=None):
     print("\n\n\n\n\n\n\n\n\n\n\n")
