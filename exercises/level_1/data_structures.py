@@ -92,8 +92,8 @@ translate = {
     'Z': 25,
 }
 print(lis1)
-for i, value in enumerate(lis1):
-    lis1[i] = translate[lis1[i][0]] + translate[lis1[i][1]]
+for i, item in enumerate(lis1):
+    lis1[i] = translate[item[0]] + translate[item[1]]
 print(lis1)
 
 # translate strings to numbers
