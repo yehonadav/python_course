@@ -119,7 +119,7 @@ print(lis1)
 # multiply users by 500
 # check if 2 users share the same email address
 
-# create another .py file
+# create a mygame1.py file
 # print this message: 'welcome to my game'
 # create a while loop
 # use the input function to print a menu like so:
@@ -139,3 +139,22 @@ print(lis1)
 #       if the loop ended print a lose message and return
 # create a replay function that takes the random number from the dictionary
 # and use it to replay
+
+# create a simple_as_py.py file
+# print your name
+# use concat to print your name and age (don't forget to space)
+# print 3 numbers separated by tabs
+# print 3 numbers separated by newlines
+# get 4 numbers using input and print their sum
+#   print the sum as integer
+# get 3 numbers using input
+#   print the sum of the first 2 divided by the third
+#   print a rounded result with no more than 2 characters after the dot (3.333333 -> 3.33)
+# get 2 numbers using input
+#   print how many times the second number consumes the first
+#   print the leftover
+# a storage room of 4x4x3
+#   create a pfunction to insert/pop items with their size
+#   and to calculate how much room is available
+# create a function to receive a radius and print its circumference, round the result to x.xx
+
