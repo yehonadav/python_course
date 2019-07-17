@@ -164,6 +164,12 @@ print('middle sorted age', ages[int(len(ages)/2)])
 users = users * 3
 
 # check if 2 users share the same email address
+emails = []
+for user in users:
+    if user['email'] in emails:
+        print(f'email {user["email"]} encountered twice!')
+        break
+    emails.append(user["email"])
 
 # create a mygame1.py file
 # print this message: 'welcome to my game'
