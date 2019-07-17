@@ -108,3 +108,22 @@ print(lis1)
 lis1.sort(reverse=True)
 print(lis1)
 
+# get a random user from users
+# get the user address
+# find 'A', 'B', 'c', 'd' indexes in the string
+# count all occurrences of 'A', 'B', 'c', 'd' in the string
+# get all user ages
+# find the average age
+# find the middle age
+# find the middle sorted age
+# multiply users by 500
+# check if 2 users share the same email address
+
+# print this message: 'welcome to my game'
+# create a while loop
+# use the input function to print a menu like so:
+# (1) new game
+# (2) try again
+# (3) quit
+# if the user input is not 1,2 or 3 print an error message
+# if the user pressed
