@@ -141,15 +141,28 @@ print('average age', sum(ages)/len(ages))
 # avg = summ/len(ages)
 
 # find the middle(index wise) age
-print(ages[int(len(ages)/2)])
+print('middle(index wise) age', ages[int(len(ages)/2)])
 
 # find the smallest age before sorting
+print('smallest age', min(ages))
 
 # find the biggest age before sorting
+print('biggest age', max(ages))
+
+ages.sort()
+
 # find the smallest age after sorting
+print('smallest age', ages[0])
+
 # find the biggest age after sorting
+print('smallest age', ages[-1])
+
 # find the middle sorted age
-# multiply users by 500
+print('middle sorted age', ages[int(len(ages)/2)])
+
+# multiply users by 3
+users = users * 3
+
 # check if 2 users share the same email address
 
 # create a mygame1.py file
