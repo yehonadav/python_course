@@ -95,5 +95,16 @@ print(lis1)
 for i, value in enumerate(lis1):
     lis1[i] = translate[lis1[i][0]] + translate[lis1[i][1]]
 print(lis1)
+
 # translate strings to numbers
+for i, value in enumerate(lis1):
+    lis1[i] = int(value)
+
 # sort the numbers
+lis1.sort()
+print(lis1)
+
+# sort in reverse
+lis1.sort(reverse=True)
+print(lis1)
+
