@@ -4,6 +4,22 @@ from exercises.data import create_user, get_data, get_data_as_text, transform_da
 from exercises.level_1.hobbies import add_random_hobby, add_second_hobby
 from qaviton.utils.helpers import funcname
 
+sentences = ''.join(sentences)
+user = create_user()
+users10 = get_data(10)
+users20 = get_data(20)
+
+add_random_hobby(users20)
+add_random_hobby(users10)
+add_second_hobby(users10)
+
+user = transform_data_to_text([user])
+users10 = transform_data_to_text(users10)
+users20 = transform_data_to_text(users20)
+users30 = get_data_as_text(30)
+
+combined_data = ''.join([sentences, user, users10, users20, users30, regex_text])
+
 
 def find_matches(regex, string):
     pattern = re.compile(regex)
@@ -273,22 +289,6 @@ def exercise_95(data):
     
     
 if __name__ == "__main__":
-    sentences = ''.join(sentences)
-    user = create_user()
-    users10 = get_data(10)
-    users20 = get_data(20)
-
-    add_random_hobby(users20)
-    add_random_hobby(users10)
-    add_second_hobby(users10)
-
-    user = transform_data_to_text([user])
-    users10 = transform_data_to_text(users10)
-    users20 = transform_data_to_text(users20)
-    users30 = get_data_as_text(30)
-
-    combined_data = ''.join([sentences, user, users10, users20, users30, regex_text])
-
     # run the program in debug mode to assert each exercise
     exercise_63(combined_data)
     exercise_64(user)

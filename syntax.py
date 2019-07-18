@@ -30,6 +30,52 @@ manager_name = "אדם"
 
 print(manager_name)
 
+# ניתן לשנות ולדרוס ערך של משתנה בקלות רבה
+manager_name = "יוסי"
+print(manager_name)
+manager_name = "רובן"
+
+# ניתן להקצות משתנים רבים בשורה אחת
+worker1, worker2, worker3 = 'lonny', 'sonny', 'ronny'
+print(worker1, worker2, worker3)
+
+# ניתן להחליף ערכים למשתנים בקלות רבה
+worker1, worker2 = worker2, worker1
+worker1, worker2, worker3 = worker3, worker1, worker2
+print(worker1, worker2, worker3)
+
+# מחיקת משתנים
+del worker1
+del worker2
+del worker3
+print('worker1, worker2, worker3')
+print('will not be present in the local variables', locals())
+
+
+
+
+
+
+
+
+index = manager_name.find("ר")
+print(index)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ##############
 #   #    חשבון
 ##############

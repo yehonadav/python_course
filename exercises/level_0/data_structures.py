@@ -1,3 +1,4 @@
+import random
 from exercises.data import get_data
 users = get_data(5)
 
@@ -21,6 +22,38 @@ print(users[1])
 names = []
 for user in users:
     names.append(user['name'])
+
+names1 = []
+for user in users:
+    names1.append(user['name'])
+
+i = 0
+names2 = []
+while i < len(users):
+    i += 1
+    names2.append(user['name'])
+
+names3 = [user['name'] for user in users]
+names4 = {user['name'] for user in users}
+names5 = {user['name']: len(user['name']) for user in users}
+names6 = (user['name'] for user in users)
+
+names7 = []
+for user in users:
+    if user['name'] < 10:
+        names7.append(user['name'])
+
+i = 0
+names8 = []
+while i < len(users):
+    i += 1
+    if user['name'] < 10:
+        names8.append(user['name'])
+
+names9 = [user['name'] for user in users if user['name'] < 10]
+names10 = {user['name'] for user in users if user['name'] < 10}
+names11 = {user['name']: len(user['name']) for user in users if user['name'] < 10}
+names12 = (user['name'] for user in users if user['name'] < 10)
 
 # view names
 print(names)
@@ -109,7 +142,6 @@ lis1.sort(reverse=True)
 print(lis1)
 
 # get a random user from users
-import random
 random_user = random.choice(users)
 
 # get the user address
@@ -170,43 +202,3 @@ for user in users:
         print(f'email {user["email"]} encountered twice!')
         break
     emails.append(user["email"])
-
-# create a mygame1.py file
-# print this message: 'welcome to my game'
-# create a while loop
-# use the input function to print a menu like so:
-# (1) new game
-# (2) try again
-# (3) quit
-# if the user input is not 1,2 or 3 print an error message
-# if the user pressed 3 break the loop
-# if the user press 1 activate a play function
-# if the user press 2 activate a replay function
-# create a play function
-#   create a number between 1-10
-#   save the number in a dictionary outside the function
-#   loop 3 times
-#       ask the user to guess the number
-#       if the answer is correct, print a message and return
-#       if the loop ended print a lose message and return
-# create a replay function that takes the random number from the dictionary
-# and use it to replay
-
-# create a simple_as_py.py file
-# print your name
-# use concat to print your name and age (don't forget to space)
-# print 3 numbers separated by tabs
-# print 3 numbers separated by newlines
-# get 4 numbers using input and print their sum
-#   print the sum as integer
-# get 3 numbers using input
-#   print the sum of the first 2 divided by the third
-#   print a rounded result with no more than 2 characters after the dot (3.333333 -> 3.33)
-# get 2 numbers using input
-#   print how many times the second number consumes the first
-#   print the leftover
-# a storage room of 4x4x3
-#   create a pfunction to insert/pop items with their size
-#   and to calculate how much room is available
-# create a function to receive a radius and print its circumference, round the result to x.xx
-
