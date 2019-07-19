@@ -112,6 +112,7 @@ Lessons | Topics                                                |
 
 We have exercises with 5 different levels of difficulty ranging from 0-4  
 in addition we recommend these sites to further sharp your skills:  
+[`data-flair`](https://data-flair.training/blogs/python-tutorial/)
 [`w3schools`](https://www.w3schools.com/python/python_exercises.asp)
 [`practicepython`](https://www.practicepython.org/)
 [`w3resource`](https://www.w3resource.com/python-exercises/python-basic-exercises.php)
