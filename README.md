@@ -110,7 +110,7 @@ Lessons | Topics                                                |
 [`Exercises:`](https://github.com/yehonadav/python_course/tree/master/exercises)
 ===============================================================================
 
-We have exercises with 5 different levels of difficulty ranging from 0-4  
+We have exercises with 4 different levels of difficulty ranging from 0-3  
 in addition we recommend these sites to further sharp your skills:  
 [`data-flair`](https://data-flair.training/blogs/python-tutorial/)
 [`w3schools`](https://www.w3schools.com/python/python_exercises.asp)
