@@ -40,20 +40,20 @@ names6 = (user['name'] for user in users)
 
 names7 = []
 for user in users:
-    if user['name'] < 10:
+    if len(user['name']) < 10:
         names7.append(user['name'])
 
 i = 0
 names8 = []
 while i < len(users):
     i += 1
-    if user['name'] < 10:
+    if len(user['name']) < 10:
         names8.append(user['name'])
 
-names9 = [user['name'] for user in users if user['name'] < 10]
-names10 = {user['name'] for user in users if user['name'] < 10}
-names11 = {user['name']: len(user['name']) for user in users if user['name'] < 10}
-names12 = (user['name'] for user in users if user['name'] < 10)
+names9 = [user['name'] for user in users if len(user['name']) < 10]
+names10 = {user['name'] for user in users if len(user['name']) < 10}
+names11 = {user['name']: len(user['name']) for user in users if len(user['name']) < 10}
+names12 = (user['name'] for user in users if len(user['name']) < 10)
 
 # view names
 print(names)
@@ -202,3 +202,11 @@ for user in users:
         print(f'email {user["email"]} encountered twice!')
         break
     emails.append(user["email"])
+
+
+
+# generator comprehension
+ages = (user['age'] for user in users)
+print(ages)
+for age in ages:
+    print(age)
