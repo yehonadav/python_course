@@ -1,6 +1,6 @@
 import time
 from exercises.data import get_data
-from exercises.level_1.hobbies import add_random_hobby, add_second_hobby, hobbies, hobbies2
+from exercises.level_1.loop_exercises.hobbies import add_random_hobby, add_second_hobby, hobbies, hobbies2
 
 
 def get_addresses(users, start=0, stop=50):

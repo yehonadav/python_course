@@ -1,4 +1,4 @@
-from exercises.level_1.number_generator import numbers
+from exercises.level_1.functions_exercises.number_generator import numbers
 
 
 class MaxLengthException(Exception):

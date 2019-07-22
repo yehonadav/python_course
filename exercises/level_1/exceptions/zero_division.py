@@ -1,5 +1,5 @@
 import random
-from exercises.level_1.number_generator import numbers
+from exercises.level_1.functions_exercises.number_generator import numbers
 
 
 def create_numbers(): return [n for n in numbers(random.randint(0, 10))]

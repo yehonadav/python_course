@@ -1,7 +1,7 @@
 import re
 from regEx.data import sentences, data as regex_text
 from exercises.data import create_user, get_data, get_data_as_text, transform_data_to_text
-from exercises.level_1.hobbies import add_random_hobby, add_second_hobby
+from exercises.level_1.loop_exercises.hobbies import add_random_hobby, add_second_hobby
 from qaviton.utils.helpers import funcname
 
 sentences = ''.join(sentences)

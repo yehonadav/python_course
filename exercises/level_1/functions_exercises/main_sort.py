@@ -1,7 +1,7 @@
 from exercises.data import get_data
-from exercises.level_1.sort_data import sort_names_with_addresses
-from exercises.level_1.sort_data import add_random_postal
-from exercises.level_1.sort_data import sum_postal_codes
+from exercises.level_1.functions_exercises.sort_data import sort_names_with_addresses
+from exercises.level_1.functions_exercises.sort_data import add_random_postal
+from exercises.level_1.functions_exercises.sort_data import sum_postal_codes
 
 
 if __name__ == "__main__":
