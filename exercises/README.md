@@ -2,25 +2,17 @@
   
 level 0 - basic concepts & syntax rules: 
 ---------
-
-exercises moved to the directory   
   
 level 1 - normal problems starting with different libraries and programing scenarios: 
 ---------
-
-exercises moved to the directory   
    
 level 2 - complicated issues with real scenarios:  
 ---------
-  
-exercises moved to the directory 
-  
+    
   
 level 3 - entire projects, involving many concepts and libraries:  
 ---------
-  
-exercises moved to the directory 
-  
+    
     
 ![game over](https://github.com/yehonadav/python_course/blob/master/exercises/images/coming_soon.png?raw=true)  
   
