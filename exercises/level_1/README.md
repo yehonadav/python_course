@@ -1,37 +1,26 @@
 # Exercises  
   
-basic: 
----------
+basic  
     
-loops: 
----------  
+loops   
     
-functions: 
----------
+functions  
     
-error handling: 
---------- 
+error handling  
     
-regEx: 
-----   
+regEx    
     
-file handling: 
---------- 
+file handling  
     
-OOP: 
----- 
+OOP  
   
-lambda map filter reduce: 
-----   
+lambda map filter reduce  
     
-Flask: 
----- 
+Flask  
       
-Time Modules: 
----- 
+Time Modules  
     
-Pandas: 
-----   
+Pandas    
   
 more exercises:  
 ---------   
