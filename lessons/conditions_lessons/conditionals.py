@@ -3,7 +3,7 @@
 ##################
 
 
-from mail import mail
+from lessons.conditions_lessons.mail import mail
 from time import sleep
 
 

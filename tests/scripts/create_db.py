@@ -1,4 +1,4 @@
-from flask_app.create_db import create
+from lessons.flask_lessons.flask_app.create_db import create
 from qaviton.utils import path
 
 
