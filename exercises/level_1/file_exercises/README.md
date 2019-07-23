@@ -36,6 +36,26 @@
 * create a program that receives a url and creates an html file  
 * if the url is invalid or the content fails to write, use error handling and a loop to retry  
   
+(6)  Create a file ```json_phone_book.py```  
+* import get_data from exercises.data and create 5 users  
+* save(add) users name, address, age, birth, phone_number in a json file  
+* get user names, ages and phone numbers from json file  
+* sort the users by age and show their names and phone numbers  
+* create a function to create, add and return users  
+  
+(7)  Create a file ```json_phone_book2.py```  
+* using the same phone_book in exercise 6, create a program that can add new users or view existing ones  
+* add user deletion capability  
+* add view all users capability  
+  
+(8)  Create a file ```csv_exercises.py```  
+* import get_data from exercises.data and create 20 employees  
+* add a random departure to employees  
+* create and run a function to save all employees in a csv file with no headers  
+* create and run a function to save all employees in a csv file with csv.DictReader  
+* create and run a function to read employees from csv no headers and recreate the employee dictionary and print them, print the number of processed employees from the csv file  
+* create and run a function to read employees from csv with headers and print the employee as an ordered dictionary, print the number of processed employees from the csv file  
+  
   
   
 more exercises:  
