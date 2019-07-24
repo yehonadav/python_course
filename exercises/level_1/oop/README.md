@@ -1,13 +1,13 @@
 # OOP Exercises  
   
-  
-(1)  Create a file ```calculator.py```  
-* create a ```Calculator```  class  with ```a, b``` arguments  
-* create ```display``` method to print the numbers and the last result  
-* create ```add``` method to calculate ```a+b```  
-* create ```sub``` method to calculate ```a-b```  
-* make sure the result is shared between all calculators  
-* test the calculators(level 2)  
+      
+    (1)  Create a file ```calculator.py```  
+    * create a ```Calculator```  class  with ```a, b``` arguments  
+    * create ```display``` method to print the numbers and the last result  
+    * create ```add``` method to calculate ```a+b```  
+    * create ```sub``` method to calculate ```a-b```  
+    * make sure the result is shared between all calculators  
+    * test the calculators(level 2)  
   
 (2)  Create a file ```inherit.py```  
 * use ```time``` & ```datetime``` modules  
