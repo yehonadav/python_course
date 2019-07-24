@@ -1,28 +1,9 @@
-# player = """
-#
-#
-#
-#                 \ \ /\ / /
-#               \            /
-#               \            /
-#                 \\\_  _///
-#                 _|  \/  |_
-#              __/   \  /   \__
-#         //--|       ||       |--\\_
-#       /   --      _/  \_           \
-#       | /  _   \_        _/   _  \  |
-#       /    |     \      /     |   \/\
-#      /     |\    |  ||  |    /|    \||
-#     | /|   ||\    \ || /    / |  |\ ||
-#     || |  //  |    \  /    |  \  | ||/
-#               --------------
-# """
 import random
 from exercises.level_1.oop.fight_club.resources.animations import player1 as animation
 from exercises.level_1.oop.fight_club.resources.base_class import hurting, attacking, Character, attack_meta, attack_types
 
 
-class Player1(Character):
+class Homer(Character):
     def __init__(self, name):
         attacks = {
             "fart": self.attack_fart
@@ -47,7 +28,7 @@ class Player1(Character):
             frames[i] = '\n'.join(lines)
         return frames
 
-    def hurt(self, attack_meta):
+    def hurt(self, attack_meta: attack_meta):
         self.health -= attack_meta.dmg
         if self.is_dead():
             animation = self.dead_animation

@@ -1,28 +1,9 @@
-# player = """
-#
-#
-#
-#                 \ \ /\ / /
-#               \            /
-#               \            /
-#                 \\\_  _///
-#                 _|  \/  |_
-#              __/   \  /   \__
-#         //--|       ||       |--\\_
-#       /   --      _/  \_           \
-#       | /  _   \_        _/   _  \  |
-#       /    |     \      /     |   \/\
-#      /     |\    |  ||  |    /|    \||
-#     | /|   ||\    \ || /    / |  |\ ||
-#     || |  //  |    \  /    |  \  | ||/
-#               --------------
-# """
 import random
 from exercises.level_1.oop.fight_club.resources.animations import enemy1 as animation
 from exercises.level_1.oop.fight_club.resources.base_class import hurting, attacking, Character, attack_types, attack_meta
 
 
-class Enemy1(Character):
+class Picachu(Character):
     def __init__(self, name):
         attacks = {
             "lightning strike": self.lightning_strike
@@ -47,7 +28,7 @@ class Enemy1(Character):
             frames[i] = '\n'.join(lines)
         return frames
 
-    def hurt(self, attack_meta):
+    def hurt(self, attack_meta: attack_meta):
         self.health -= attack_meta.dmg
         if self.is_dead():
             animation = self.dead_animation
