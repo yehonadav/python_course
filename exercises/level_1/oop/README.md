@@ -66,8 +66,8 @@ else:
 ```  
 return the duration result  
 * ```def get_duration(self, ?)``` needs an argument, add the missing argument  
-* create a ```run``` method that recieves a distance(in meters) parameter  
-* in the ```run``` method get the running duration of the distance and uses time.sleep to wait until thr running operation is done  
+* create a ```run``` method that receives a distance(in meters) parameter  
+* in the ```run``` method get the running duration of the distance and use time.sleep to wait until the running operation is done  
 * in the ```run``` method return the a runner's name  
   
 (6)  in ```athlete.py```  
