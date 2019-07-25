@@ -1,43 +1,108 @@
 # OOP Exercises  
   
       
-    (1)  Create a file ```calculator.py```  
-    * create a ```Calculator```  class  with ```a, b``` arguments  
-    * create ```display``` method to print the numbers and the last result  
-    * create ```add``` method to calculate ```a+b```  
-    * create ```sub``` method to calculate ```a-b```  
-    * make sure the result is shared between all calculators  
-    * test the calculators(level 2)  
+(1)  Create a file ```calculator.py```  
+* create a ```Calculator```  class  with ```a, b``` arguments  
+* create ```display``` method to print the numbers and the last result  
+* create ```add``` method to calculate ```a+b```  
+* create ```sub``` method to calculate ```a-b```  
+* make sure the result is shared between all calculators  
+* test the calculators(level 2)  
   
-(2)  Create a file ```inherit.py```  
+(2)  in ```calculator.py```  
+* create a Calculator2 class that inherits the Calculator class  
+* change the last result to a list of results  
+* add multiplication method  
+* create 3 calculators and make some calculations  
+* view the different results  
+* override the Calculator methods that needs changes(all but the __init__ method)  
+  
+(3)  Create a file ```inherit.py```  
 * use ```time``` & ```datetime``` modules  
-* create ```Time``` class with ```get_time``` to get a time signature  
-* create ```Date``` class with ```get_date``` to get a date signature  
-* inherit ```Time``` class from in ```Date``` class  
+* create ```Time``` class with ```get_time``` method, to get a time signature (epoc time)  
+* create ```Date``` class with ```get_date``` method, to get a date signature (datetime object)  
+* ```Date``` class inherit ```Time``` class  
 * create a main program condition:  
   ```if __name__ == "__main__":```  
   use both classes and their available methods  
   
-(3)  Create a file ```athlete.py```  
+(4)  Create a file ```athlete.py```  
 * create ```Athlete``` class with ```name, power, speed, endurance, weight``` arguments  
-* create ```Sprinter``` and inherit ```Athlete```  
-  boots the ```Sprinter``` parameters as such:  
-```  
-power *= 2, speed += 1, endurance -= 3  
-if endurance < 1: endurance = 1
-```  
-* create a ```run``` method like so in ```Sprinter```:  
-```
-    def run(self, distance):
-        endurance = 1 + distance/self.endurance
-        sleep((self.weight*distance)/(self.power*(self.speed**2)+endurance))
-        return self.name
-```
+* make sure if the speed of the athlete is smaller than the endurance, redefine its value to equal: endurance+3  
   
-(4)  Create a file ```timer.py```  
+(5)  in ```athlete.py```  
+* create class ```Runner``` and inherit ```Athlete```  
+* in the runner's ```__init__``` method, set a default value of power, speed & endurance to 0  
+* in the runner's ```__init__``` method, set a default value of weight to 60  
+* boost the runner's power by 10 percent of its weight  
+* boost runner's speed by 25kmh  
+* boost the runner's endurance by 8  
+* create a ```get_duration``` method with this code:  
+```python
+acceleration = self.power / self.weight
+top_speed = self.speed
+time_to_reach_top_speed = top_speed / acceleration
+distance_to_top_speed = top_speed * time_to_reach_top_speed / 2
+
+if distance == distance_to_top_speed:
+    duration = time_to_reach_top_speed
+
+elif distance < distance_to_top_speed:
+    duration = (2 * distance / acceleration) ** (1 / 2)
+
+else:
+    deceleration = acceleration
+    endurance_speed = self.endurance
+    time_to_reach_endurance_speed = top_speed - endurance_speed / deceleration
+    distance_to_endurance_speed = top_speed * time_to_reach_endurance_speed / 2
+
+    if distance == distance_to_top_speed + distance_to_endurance_speed:
+        duration = time_to_reach_endurance_speed
+    elif distance < distance_to_top_speed + distance_to_endurance_speed:
+        duration = time_to_reach_top_speed + (2 * (distance - distance_to_top_speed) / deceleration) ** (1 / 2)
+    else:
+        time_to_reach_distance = (distance - (distance_to_top_speed + distance_to_endurance_speed)) / endurance_speed
+        duration = time_to_reach_top_speed + time_to_reach_endurance_speed + time_to_reach_distance
+```  
+return the duration result  
+* ```def get_duration(self, ?)``` needs an argument, add the missing argument  
+* create a ```run``` method that recieves a distance(in meters) parameter  
+* in the ```run``` method get the running duration of the distance and uses time.sleep to wait until thr running operation is done  
+* in the ```run``` method return the a runner's name  
+  
+(6)  in ```athlete.py```  
+* create a class ```Sprinter``` and inherit ```Runner```  
+* in the sprinter's ```__init__``` method, set a default value of power, speed & endurance to 0  
+* in the sprinter's ```__init__``` method, set a default value of weight to 70  
+* boost the sprinter's power by 75 percent of its weight on top of the runner's boost  
+* boost sprinter's speed by 15kmh on top of the runner's boost  
+* boost the sprinter's endurance by 1 on top of the runner's boost  
+  
+(7)  in ```athlete.py```  
+* create a class ```MarathonRunner``` and inherit ```Runner```  
+* in the marathon runner's ```__init__``` method, set a default value of power, speed & endurance to 0  
+* in the marathon runner's ```__init__``` method, set a default value of weight to 55  
+* divide the marathon runner's power by 1.1 on top of the runner's boost  
+* decrease marathon runner's speed by 3kmh on top of the runner's boost  
+* boost the marathon runner's endurance by 7 on top of the runner's boost  
+* after the runner's boost, if marathon runner's speed <= 8, set it to equal 8  
+* after the runner's boost, if marathon runner's speed < marathon runner's endurance + 1, set it to equal to marathon runner's endurance + 1  
+  
+(8)  in ```athlete.py```  
+* create a main program condition:  
+  ```if __name__ == "__main__":```  
+* create a tuple of distances: 100m, 200m, 800m, 1.6km, 5km, 20km  
+* create a tuple of athletes with 2 sprinters, 1 runner & 1 marathon runner  
+* iterate the distances  
+*   iterate the athletes for each distance(nested loop)  
+*     get the running duration  
+*     print the name, distance, and running duration of the athlete
+*     when printing the running duration, use this format: ```(a)hr (b)min (c.xx)sec```
+  
+(9)  Create a file ```timer.py```  
 * create ```Measurement``` class with ```date``` & ```run_time```  
   
-(5)  in ```timer.py```  
+(10)  in ```timer.py```  
 * import ```Date```  from exercise 22  
 * create ```Timer``` class & inherit ```Date```  
 * create ```__init__``` method with ```f, *args, **kwargs``` arguments  
@@ -53,7 +118,7 @@ if endurance < 1: endurance = 1
   run an operation with its arguments  
   & return the operation result  
   
-(6)  in ```timer.py```  
+(11)  in ```timer.py```  
 * create a main program condition:  
   ```if __name__ == "__main__":```  
 * use these imports: 
@@ -72,12 +137,12 @@ if endurance < 1: endurance = 1
   winner name, the distance,  
   the winner run time  
   
-(7)  in ```timer.py``` class ```Timer```  
+(12)  in ```timer.py``` class ```Timer```  
 * add doc string explaining the Timer API
 * add a hint typing for ```f``` argument hinting it is a function (callable)  
   
   
-(8)  create ```play_hunter.py```  
+(13)  create ```play_hunter.py```  
 * create classes: Tiger, Wolf, Archer, Player  
 * player can inherit one of the classes and use them  
 * Tiger: name, health, method meow(when hurt), method killed  
