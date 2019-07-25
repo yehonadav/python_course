@@ -87,14 +87,14 @@ if __name__ == "__main__":
             duration = athlete.get_duration(distance)
             if duration > 3600:
                 hr = duration//3600
-                min = (duration % 3600)//60
+                min = int((duration % 3600)//60)
                 sec = round((duration % 3600) % 60, 2)
-                duration = f'{hr}hr {min}min {sec}sec'
+                timedelta = f'{hr}hr {min}min {sec}sec'
             elif duration > 60:
-                min = duration//60
+                min = int(duration//60)
                 sec = round(duration % 60, 2)
-                duration = f'0hr {min}min {sec}sec'
+                timedelta = f'0hr {min}min {sec}sec'
             else:
-                duration = f'0hr 0min {round(duration, 2)}sec'
-            print(template.format(name=athlete.name, distance=distance/1000, timedelta=duration))
+                timedelta = f'0hr 0min {round(duration, 2)}sec'
+            print(template.format(name=athlete.name, distance=distance/1000, timedelta=timedelta))
         print("")
