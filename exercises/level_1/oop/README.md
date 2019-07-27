@@ -100,10 +100,10 @@ return the duration result
 *     when printing the running duration, use this format: ```(a)hr (b)min (c.xx)sec```
   
 (9)  Create a file ```timer.py```  
-* create ```Measurement``` class with ```date``` & ```run_time```  
+* create ```Measurement``` class with ```date``` & ```run_time``` methods  
   
 (10)  in ```timer.py```  
-* import ```Date```  from exercise 22  
+* import ```Date```  from exercise 3  
 * create ```Timer``` class & inherit ```Date```  
 * create ```__init__``` method with ```f, *args, **kwargs``` arguments  
 * save the arguments as such:

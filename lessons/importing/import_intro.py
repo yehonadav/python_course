@@ -1,0 +1,8 @@
+# m = __import__('exercises.data', globals(), locals(), [], 0)
+m = __import__('.', globals(), locals(), ['*'], 0)
+print(m)
+print(dir(m))
+# print(m.__file__)
+# user = m.data.get_data(1)
+print(type(m))
+# print(user)
