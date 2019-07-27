@@ -6,6 +6,7 @@
 import os
 import pkgutil
 import importlib.util
+import sys
 
 
 p = print
@@ -58,6 +59,11 @@ print('m2.__path__', m2.__path__)
 # import_foo = importlib.util.module_from_spec(spec)
 # spec.loader.exec_module(import_foo)
 # print("import import_foo using importlib", import_foo.foo)
+file_dir = os.path.dirname(__file__)
+if file_dir not in sys.path:  # this part is important, we don't want to spam sys.path with duplicates
+    sys.path.append(file_dir)
+import import_foo
+print("get foo using sys.path", import_foo.foo)
 
 package = m1
 subpackages = ["Found submodule %s (is a package: %s)" % (modname, ispkg) for importer, modname, ispkg in pkgutil.iter_modules(package.__path__)]
