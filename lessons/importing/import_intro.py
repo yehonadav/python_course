@@ -5,6 +5,8 @@
 # https://stackoverflow.com/questions/17344561/python-perform-relative-import-when-using-import
 import os
 import pkgutil
+import importlib.util
+
 
 p = print
 print = lambda *args, **kwargs: p(*args, **kwargs, end="\n\n")
@@ -51,6 +53,11 @@ print('user2 = get_data(1)', user1)
 
 print('m2.__path__', m2.__path__)
 
+# FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\yonad\\PycharmProjects\\python_course\\exercises\\import_foo.py'
+# spec = importlib.util.spec_from_file_location("import_foo", os.path.dirname(__file__) + '\\import_foo.py')
+# import_foo = importlib.util.module_from_spec(spec)
+# spec.loader.exec_module(import_foo)
+# print("import import_foo using importlib", import_foo.foo)
 
 package = m1
 subpackages = ["Found submodule %s (is a package: %s)" % (modname, ispkg) for importer, modname, ispkg in pkgutil.iter_modules(package.__path__)]
