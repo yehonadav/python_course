@@ -1,28 +1,9 @@
-# Exercises  
+# Game Exercises  
   
-basic  
-    
-loops   
-    
-functions  
-    
-error handling  
-    
-regEx    
-    
-file handling  
-    
-OOP  
-  
-Games  
-  
-lambda map filter reduce  
-    
-Flask  
       
-Time Modules  
-    
-Pandas    
+(1)  Create a file ```love_msg.py```  
+* create a cute messaging program between a dating couple  
+  
   
 more exercises:  
 ---------   
