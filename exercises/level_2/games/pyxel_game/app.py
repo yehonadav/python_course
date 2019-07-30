@@ -1,5 +1,5 @@
 import pyxel
-from exercises.level_2.pyxel_game.models import Hero, OneBit
+from exercises.level_2.games.pyxel_game import Hero, OneBit
 
 
 class App:

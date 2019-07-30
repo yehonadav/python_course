@@ -164,7 +164,74 @@ Flask:
   
 (2)  Create a simple login flask app with sqlite database & 3 users using sqlalchemy  
   
-   
+  
+Automation:  
+---------    
+  
+(1)  git clone https://github.com/yehonadav/doom_light.git  
+*  delete the scripts directory and its contents  
+*  recreate the scripts directory  
+*  the repository contains .wad & .txt files, some of these file contain game characters  
+   the characters format is as follows:('actor' can be fully or partially lower/upper cased and '{' can be after a new line)  
+```
+actor 'name' 'id' {
+    code...
+}
+```  
+  before adding characters we need to run a script to make sure the game characters will not duplicate ids or names,  
+  create such a script to list all names and ids in a database and handle possible duplications:  
+  * list all actor files  
+  * get all ids + actor names  
+  * change actor names + ids if duplicates  
+  * save all actor names + ids in a DB (text/json file would be sufficient)  
+  
+(2)  git clone https://github.com/yehonadav/doom_automation.git  
+*  add the scripts from previous doom_light exercises  
+*  create a script to check for animdefs conflicts:  
+```
+animdefs are animation definitions for the game, each file should have unique animdefs
+animdefs names appear right after 'cameratexture', 'Cameratexture', 'CAMERATEXTURE', 'Texture', 'texture', 'TEXRURE', 'Flat', 'flat', 'FLAT', 'Switch', 'switch', 'SWITCH'
+or 2 words after 'warp', 'WARP', 'Warp'
+
+our script needs to check conflicts between directories 'JonaDoom' & 'things_to_import'
+print the name conflicts and overall conflicts
+```  
+  
+(3)  git clone https://github.com/yehonadav/doom_automation.git  
+*  add the scripts from previous exercises  
+*  create a script to check for new actors conflicts:  
+```
+this script applies only to .txt files.
+we need to collect all names & ids of actors from things_to_import directory
+and compare them with a database
+```  
+  
+(4)  git clone https://github.com/yehonadav/doom_automation.git  
+*  add the scripts from previous exercises  
+*  create a script to check for new files conflicts:  
+```
+we need to collect all filenames from things_to_import and compare them with filenames from JonaDoom
+and delete conflicting files from things_to_import
+```  
+  
+(5)  git clone https://github.com/yehonadav/doom_automation.git  
+*  create a script to find the next available ids, if let's say we need 5 new ids, the script will return the next 5 unused ids    
+  
+(6)  git clone https://github.com/yehonadav/doom_automation.git  
+*  add the scripts from previous exercises  
+*  replace your current database with an sqlite3 database  
+  
+(7)  git clone https://github.com/yehonadav/doom_automation.git  
+* add the scripts from previous exercises  
+* create a script to update the database's actors after pasting new files to JonaDoom directory  
+* if conflicts are found, ignore them  
+* export an actors.csv file containing actor names and ids  
+  
+(8)  git clone https://github.com/yehonadav/doom_automation.git  
+* add the scripts from previous exercises  
+* create a script to update the database's files after pasting new files to JonaDoom directory(database contains actor & file tables)  
+* if conflicts are found, ignore them  
+      
 more exercises:  
 ---------   
 

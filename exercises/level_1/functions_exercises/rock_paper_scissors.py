@@ -19,6 +19,8 @@ choices = ["rock", "paper", "scissors"]
 
 
 def play():
+    """this game only works if you run
+    the program directly from the terminal"""
     while True:
         player1 = None
         player2 = None
