@@ -168,7 +168,7 @@ Flask:
 Automation:  
 ---------    
   
-(1)  git clone https://github.com/yehonadav/doom_light.git  
+(1)  git clone https://github.com/yehonadav/doom_light.git (dont forget to setup python venv)  
 *  delete the scripts directory and its contents  
 *  recreate the scripts directory  
 *  the repository contains .wad & .txt files, some of these file contain game characters  
@@ -185,7 +185,7 @@ actor 'name' 'id' {
   * change actor names + ids if duplicates  
   * save all actor names + ids in a DB (text/json file would be sufficient)  
   
-(2)  git clone https://github.com/yehonadav/doom_automation.git  
+(2)  git clone https://github.com/yehonadav/doom_light.git  
 *  add the scripts from previous doom_light exercises  
 *  create a script to check for animdefs conflicts:  
 ```
@@ -197,7 +197,7 @@ our script needs to check conflicts between directories 'JonaDoom' & 'things_to_
 print the name conflicts and overall conflicts
 ```  
   
-(3)  git clone https://github.com/yehonadav/doom_automation.git  
+(3)  git clone https://github.com/yehonadav/doom_light.git  
 *  add the scripts from previous exercises  
 *  create a script to check for new actors conflicts:  
 ```
@@ -206,7 +206,7 @@ we need to collect all names & ids of actors from things_to_import directory
 and compare them with a database
 ```  
   
-(4)  git clone https://github.com/yehonadav/doom_automation.git  
+(4)  git clone https://github.com/yehonadav/doom_light.git  
 *  add the scripts from previous exercises  
 *  create a script to check for new files conflicts:  
 ```
@@ -214,20 +214,20 @@ we need to collect all filenames from things_to_import and compare them with fil
 and delete conflicting files from things_to_import
 ```  
   
-(5)  git clone https://github.com/yehonadav/doom_automation.git  
+(5)  git clone https://github.com/yehonadav/doom_light.git  
 *  create a script to find the next available ids, if let's say we need 5 new ids, the script will return the next 5 unused ids    
   
-(6)  git clone https://github.com/yehonadav/doom_automation.git  
+(6)  git clone https://github.com/yehonadav/doom_light.git  
 *  add the scripts from previous exercises  
 *  replace your current database with an sqlite3 database  
   
-(7)  git clone https://github.com/yehonadav/doom_automation.git  
+(7)  git clone https://github.com/yehonadav/doom_light.git  
 * add the scripts from previous exercises  
 * create a script to update the database's actors after pasting new files to JonaDoom directory  
 * if conflicts are found, ignore them  
 * export an actors.csv file containing actor names and ids  
   
-(8)  git clone https://github.com/yehonadav/doom_automation.git  
+(8)  git clone https://github.com/yehonadav/doom_light.git  
 * add the scripts from previous exercises  
 * create a script to update the database's files after pasting new files to JonaDoom directory(database contains actor & file tables)  
 * if conflicts are found, ignore them  
