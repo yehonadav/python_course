@@ -231,7 +231,15 @@ and delete conflicting files from things_to_import
 * add the scripts from previous exercises  
 * create a script to update the database's files after pasting new files to JonaDoom directory(database contains actor & file tables)  
 * if conflicts are found, ignore them  
-      
+   
+(9)  git clone https://github.com/yehonadav/doom_light.git  
+* add the scripts from previous exercises  
+* create a script to use wadext to unpack files from .wad files  
+* the script will go through a root directory and move 1 file at a time to the wadext dir before usage  
+* after a .wad is unpacked, its contents would be saved into a directory  
+* the directory then be moved back to the .wad's original parent dir  
+* if all is done successfully, delete the .wad file  
+  
 more exercises:  
 ---------   
 
