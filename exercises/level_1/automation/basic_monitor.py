@@ -1,4 +1,4 @@
-# make it work
+# TODO: make it work
 
 def system_stats_raw():
     boot_time = psutil.boot_time()
