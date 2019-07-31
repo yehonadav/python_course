@@ -1,4 +1,9 @@
 # TODO: make it work
+from threaders import threaders
+import psutil
+import datetime
+import time
+
 
 def system_stats_raw():
     boot_time = psutil.boot_time()
@@ -17,7 +22,6 @@ def bytes_to_GB(bytes):
 
 
 def monitor_machine():
-    @threaders.threader()
     def get_stats():
         """:rtype: threaders.Thread"""
         stats = system_stats_raw()
@@ -50,7 +54,10 @@ def monitor_machine():
     stop_thread = quit()
     time.sleep(2)
     while stop_thread.is_alive():
-        get_stats().join()
+        get_stats()
         time.sleep(2)
 
     stop_thread.join()
+
+
+monitor_machine()
