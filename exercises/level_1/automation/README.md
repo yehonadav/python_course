@@ -1,9 +1,8 @@
-from threaders import threaders
-import psutil
-import datetime
-import time
-
-
+# Automation Exercises  
+  
+  
+(1)  Create a file ```monitor.py```, make this code work:  
+```python
 def system_stats_raw():
     boot_time = psutil.boot_time()
     return {
@@ -57,7 +56,17 @@ def monitor_machine():
         time.sleep(2)
 
     stop_thread.join()
+```  
+![flask_login](https://github.com/yehonadav/python_course/blob/master/exercises/images/monitor.png?raw=true)  
 
-
-if __name__ == "__main__":
-    monitor_machine()
+  
+more exercises:  
+---------   
+  
+if you have ideas for any kind of exercises please open up an issue with:  
+* the exercise title  
+* exercise description  
+* recommended dependencies & tools  
+* steps pointing to the solution  
+* a working solution  
+  
