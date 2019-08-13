@@ -6,6 +6,8 @@ from exercises.level_2.games.love_messanger.message_translator import LoveTransl
 
 class LoveScreen(pyglet.window.Window):
     def __init__(self, love_msg: LoveTranslator):
+        if 'hebrew' in love_msg:
+            love_msg['hebrew'] = reversed(love_msg['hebrew'])
 
         # setting screen size
         pyglet.window.Window.__init__(self, width=1200, height=800, caption="❤MSG")
