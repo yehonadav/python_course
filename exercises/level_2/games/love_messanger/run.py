@@ -1,6 +1,7 @@
 import pyglet
 from exercises.level_2.games.love_messanger.message_translator import LoveTranslator
 from exercises.level_2.games.love_messanger.screen import LoveScreen
+from exercises.level_2.games.love_messanger.speaker import speaker
 
 
 if __name__ == "__main__":
@@ -29,5 +30,7 @@ if __name__ == "__main__":
     O:::::::::::::::::::::::::::::::::::::::::::::::::::::::O
     X:::::::::::::::::::::::::::::::::::::::::::::::::::::::X
     OXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXO""")
-    LoveScreen(love_msg=LoveTranslator())
+    love_msg = LoveTranslator()
+    LoveScreen(love_msg)
+    speaker(love_msg)
     pyglet.app.run()

@@ -2,6 +2,7 @@
 ```
 >pip install pyglet
 >pip install googletrans
+>pip install pyttsx3
 ```
   
 # run:  
