@@ -5,7 +5,7 @@
 </h1>
 
 [![open issues](https://img.shields.io/github/issues/yehonadav/python_course)](https://github/issues-raw/yehonadav/python_course)  
-![code size](https://img.shields.io/github/code-size/yehonadav/qaviton_helpers)  
+![code size](https://img.shields.io/github/repo-size/yehonadav/qaviton_helpers)  
 
 ```                         
                                                    ,:
