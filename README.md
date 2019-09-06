@@ -7,6 +7,7 @@
 ![downloads](https://img.shields.io/github/downloads/yehonadav/python_course/master/total)  
 ![code size](https://img.shields.io/github/languages/code-size/yehonadav/qaviton_helpers)  
 ![commits](https://img.shields.io/github/commit-activity/m/yehonadav/python_course)  
+-------------------------  
 ```                         
                                                    ,:
                                                  ,' |
