@@ -88,7 +88,7 @@ SQLAlchemy==1.2.12
 text-unidecode==1.2
 threaders==0.2.12
 traitlets==4.3.2
-urllib3==1.23
+urllib3>=1.24.2
 virtualenv==16.0.0
 wcwidth==0.1.7
 webassets==0.12.1
