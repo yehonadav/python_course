@@ -2,7 +2,8 @@
   <a href="https://www.python.org">
     Python Course <img src="https://www.python.org/static/opengraph-icon-200x200.png" alt="Sublime's custom image"/> Nano Degree
   </a>
-</h1>  
+</h1>
+
 ```                         
                                                    ,:
                                                  ,' |
