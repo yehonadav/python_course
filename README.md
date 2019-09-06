@@ -3,10 +3,12 @@
     Python Course <img src="https://www.python.org/static/opengraph-icon-200x200.png" alt="Sublime's custom image"/> Nano Degree
   </a>
 </h1>  
-[![open issues](https://img.shields.io/github/issues/yehonadav/python_course)](https://github/issues-raw/yehonadav/python_course)  
-![downloads](https://img.shields.io/github/downloads/yehonadav/python_course/master/total)  
-![code size](https://img.shields.io/github/languages/code-size/yehonadav/qaviton_helpers)  
-![commits](https://img.shields.io/github/commit-activity/m/yehonadav/python_course)  
+# Qaviton Package Manager
+![logo](https://www.qaviton.com/wp-content/uploads/logo-svg.svg)  
+[![version](https://img.shields.io/pypi/v/qaviton_package_manager.svg)](https://pypi.python.org/pypi)
+[![open issues](https://img.shields.io/github/issues/qaviton/qaviton_package_manager)](https://github/issues-raw/qaviton/qaviton_package_manager)
+[![downloads](https://img.shields.io/pypi/dm/qaviton_package_manager.svg)](https://pypi.python.org/pypi)
+![code size](https://img.shields.io/github/languages/code-size/qaviton/qaviton_package_manager)
 -------------------------  
 ```                         
                                                    ,:
