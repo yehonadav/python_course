@@ -6,6 +6,7 @@
 # TODO: create a script to automatically
 #  commit and push every 10 seconds
 from qaviton_git import Git
+from qaviton_helpers import try_to
 from cred import user, password, email
 from time import time, sleep
 
@@ -15,6 +16,8 @@ git = Git(
     username=user,
     email=email,
 )
+
+try_to(git.create_remote)
 while True:
     t = time()
     try:
