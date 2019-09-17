@@ -19,6 +19,7 @@ while True:
     t = time()
     try:
         git.commit("auto commit")
+        git.pull()
         git.push()
     except:
         pass
