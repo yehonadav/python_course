@@ -1,6 +1,6 @@
 # TODO: create a new branch named auto
-# TODO: create a cred.py file with your username, password & email
 # TODO: add a cred.py file to .gitignore
+# TODO: create a cred.py file with your username, password & email
 # TODO: create a git_auto.py file
 # TODO: install qaviton_git
 # TODO: create a script to automatically
