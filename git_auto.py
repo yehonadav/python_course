@@ -6,7 +6,8 @@
 # TODO: create a script to automatically
 #  commit and push every 10 seconds
 from qaviton_git import Git
-from qaviton_helpers import try_to, multi_try, DynamicWait
+from qaviton_helpers import DynamicWait
+from qaviton_handlers.try_functions import try_to, multi_try
 from cred import user, password, email
 
 
