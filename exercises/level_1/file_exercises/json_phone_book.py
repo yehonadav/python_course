@@ -21,7 +21,7 @@ def get_phone_book(new_users=None):
         users.extend(new_users)
         print(f'saving users in {filename}')
         with open(filename, 'w') as phone_book:
-            json.dump(users, phone_book)
+            json.dump(users, phone_book, indent=2)
     return users
 
 
