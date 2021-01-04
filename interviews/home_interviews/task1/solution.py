@@ -49,4 +49,5 @@ def log_scanner(strings: List[str], folder_name: str):
                     "count": count,
                 })
 
-    return results
+    # The table should be sorted by Count column (order was not specified, we chose descending)
+    return sorted(results, key=lambda i: i['count'], reverse=True)

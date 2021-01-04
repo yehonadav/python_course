@@ -25,7 +25,14 @@ def test_log_scanner():
 
     results = log_scanner(strings, folder_name)
 
-    print(results)
+    print('')
+    for i in results:
+        print(i)
+
+    assert len(results) == 3
+    assert results[0]['file_name'] == 'A.log' and results[0]['string'] == 'Fatal' and results[0]['count'] == 3
+    assert results[1]['file_name'] == 'A.log' and results[1]['string'] == 'Error' and results[1]['count'] == 2
+    assert results[2]['file_name'] == 'B.log' and results[2]['string'] == 'Error' and results[2]['count'] == 1
 
 
 def test_create_log_scan_report():
@@ -36,11 +43,8 @@ def test_create_log_scan_report():
     logs_folder = 'logs'
     report_filename = 'logs_report.html'
 
+    # TODO: use report to assert test
     report = create_log_scan_report(search_logs, logs_folder, report_filename)
-
-    print('')
-    for i in report:
-        print(i)
 
     try:
         with open(report_filename) as f:
@@ -53,9 +57,10 @@ def test_create_log_scan_report():
         if os.path.exists(report_filename):
             os.remove(report_filename)
 
-    assert len(report) == 3
-    assert report[0]['file_name'] == 'A.log' and report[0]['string'] == 'Fatal' and report[0]['count'] == 3
-    assert report[1]['file_name'] == 'A.log' and report[1]['string'] == 'Error' and report[1]['count'] == 2
-    assert report[2]['file_name'] == 'B.log' and report[2]['string'] == 'Error' and report[2]['count'] == 1
+    # already tested in test_log_scanner
+    # assert len(report) == 3
+    # assert report[0]['file_name'] == 'A.log' and report[0]['string'] == 'Fatal' and report[0]['count'] == 3
+    # assert report[1]['file_name'] == 'A.log' and report[1]['string'] == 'Error' and report[1]['count'] == 2
+    # assert report[2]['file_name'] == 'B.log' and report[2]['string'] == 'Error' and report[2]['count'] == 1
     # TODO: (anyone is welcome to open an issue with the solution to my TODO)
     #  test the link, and maybe test the html too =)

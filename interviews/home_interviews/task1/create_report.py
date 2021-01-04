@@ -6,9 +6,6 @@ from .solution import log_scanner
 def create_log_scan_report(search_logs: List[str], logs_folder: str, report_filename: str):
     results = log_scanner(search_logs, logs_folder)
 
-    # The table should be sorted by Count column (order was not specified, we chose descending)
-    results.sort(key=lambda i: i['count'], reverse=True)
-
     html = ["""
     <html>
         <table border="1">
