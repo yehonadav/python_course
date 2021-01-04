@@ -57,3 +57,5 @@ def test_create_log_scan_report():
     assert report[0]['file_name'] == 'A.log' and report[0]['string'] == 'Fatal' and report[0]['count'] == 3
     assert report[1]['file_name'] == 'A.log' and report[1]['string'] == 'Error' and report[1]['count'] == 2
     assert report[2]['file_name'] == 'B.log' and report[2]['string'] == 'Error' and report[2]['count'] == 1
+    # TODO: (anyone is welcome to open an issue with the solution to my TODO)
+    #  test the link, and maybe test the html too =)
