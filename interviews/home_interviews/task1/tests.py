@@ -53,7 +53,7 @@ def test_create_log_scan_report():
             for line in data.splitlines():
                 print(line)
     finally:
-        # cleanup
+        # cleanup (run in debug and stop here if you want to see the report before deletion)
         if os.path.exists(report_filename):
             os.remove(report_filename)
 
