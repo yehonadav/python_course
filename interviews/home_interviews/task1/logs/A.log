@@ -1,0 +1,17 @@
+write python script that gets
+argument (array of string to search, folder name)
+
+  ### The program should
+    * Scan the <folder name> (the folder should contain log files)
+    * Look for each string from the array on eacg file
+    * Return result report with below table:
+
+| File Name | String | Count (number of instances) |
+|-----------|--------|-----------------------------|
+| A.log     | ErrorError  | 2                           |
+| A.log     | Fatal  | 3                           |
+
+  * Prefer html report while the file name is link to the file
+  * The table should be sorted by Count column
+
+  Fatal Fatal
