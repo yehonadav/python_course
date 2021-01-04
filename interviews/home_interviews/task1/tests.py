@@ -1,15 +1,21 @@
-def test_get_log_files():
-    from .solution import get_log_files
+import os
+from .solution import log_scanner
+from .solution import get_log_files
+from .solution import get_valid_log_strings
+from .create_report import create_log_scan_report
 
-    log_files = get_log_files('logs')
+
+strings = ['Error', 'Fatal', '', '   ']
+folder_name = 'logs'
+
+
+def test_get_log_files():
+    log_files = get_log_files(folder_name)
 
     assert log_files == ['A.log', 'B.log', 'C.log']
 
 
 def test_get_valid_log_strings():
-    from .solution import get_valid_log_strings
-
-    strings = ['Error', 'Fatal', '', '   ']
     valid_strings = get_valid_log_strings(strings)
 
     assert len(valid_strings) == 2
@@ -18,11 +24,6 @@ def test_get_valid_log_strings():
 
 
 def test_log_scanner():
-    from .solution import log_scanner
-
-    strings = ['Error', 'Fatal', '', '   ']
-    folder_name = 'logs'
-
     results = log_scanner(strings, folder_name)
 
     print('')
@@ -36,11 +37,8 @@ def test_log_scanner():
 
 
 def test_create_log_scan_report():
-    from .create_report import create_log_scan_report
-    import os
-
-    search_logs = ['Error', 'Fatal', '', '   ']
-    logs_folder = 'logs'
+    search_logs = strings
+    logs_folder = folder_name
     report_filename = 'logs_report.html'
 
     # TODO: use report to assert test
