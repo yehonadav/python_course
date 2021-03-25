@@ -78,7 +78,7 @@ python-dateutil==2.7.3
 python-dotenv==0.10.1
 python-editor==1.0.4
 pyxel==0.9.9
-PyYAML==5.1b5
+PyYAML==5.4
 qaviton==0.0.11
 requests==2.21.0
 selenium==3.14.1
