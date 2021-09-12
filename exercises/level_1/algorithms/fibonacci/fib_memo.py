@@ -40,10 +40,5 @@ class FibMemo:
         else:
             print(f"fib_memo({self.memo_size - 1}) up to date")
 
-    def __call__(self, n: int) -> int:
-        res = fib.fib(n)
-        self.save()
-        return res
-
 
 fib_memo = FibMemo()
