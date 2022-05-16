@@ -1,3 +1,5 @@
+# go to the performance lesson "find_first_recurring_char_investigate_performance"
+# to find out more about better solutions
 def find_first_recurring_char(string):
     count = {}
     for char in string:
