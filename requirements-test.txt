@@ -53,7 +53,7 @@ marshmallow==2.18.1
 mock==1.0.1
 more-itertools==4.3.0
 mouse==0.7.0
-numpy==1.15.2
+numpy==1.21.0
 oauth2==1.9.0.post1
 parso==0.3.3
 passlib==1.7.1
