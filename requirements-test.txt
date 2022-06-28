@@ -1,7 +1,7 @@
 alembic==1.0.7
 apipkg==1.5
 Appium-Python-Client==0.28
-arrow==0.13.1
+arrow==0.15.1
 asn1crypto==0.24.0
 atomicwrites==1.2.1
 attrs==18.2.0
