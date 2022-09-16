@@ -47,7 +47,7 @@ jedi==0.13.2
 Jinja2>=2.10.1
 jinja2-time==0.2.0
 keyboard==0.13.2
-Mako==1.0.7
+Mako==1.2.2
 MarkupSafe==1.0
 marshmallow==2.18.1
 mock==1.0.1
